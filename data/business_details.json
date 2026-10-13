@@ -1,0 +1,143 @@
+{
+  "business_name": "Once More - Cafe & Store",
+  "display_name": "Once More",
+  "tagline": "Specialty Coffee, Fine Tea & Curated Homeware in Eden Terrace",
+  "categories": [
+    "Coffee shop",
+    "Cafe",
+    "Tea house",
+    "Boutique Store",
+    "Brunch"
+  ],
+  "primary_category": "Coffee shop",
+  "google_identifiers": {
+    "place_id": "ChIJDxiuQlhHDW0RI8mLwDLveNA",
+    "cid": "15022067756910627107",
+    "hex_id": "0x6d0d475842ae180f:0xd078ef32c08bc923",
+    "kg_mid": "/g/11rv17b51m",
+    "maps_short_url": "https://maps.app.goo.gl/sYgYipkAPVMcbTCM9",
+    "maps_full_url": "https://www.google.com/maps/place/Once+More+-+Cafe+%26+Store/@-36.863458,174.7613921,17z/data=!3m1!4b1!4m6!3m5!1s0x6d0d475842ae180f:0xd078ef32c08bc923!8m2!3d-36.863458!4d174.7613921!16s%2Fg%2F11rv17b51m"
+  },
+  "contact": {
+    "phone_display": "0210 849 8991",
+    "phone_international": "+64 210 849 8991",
+    "phone_tel_link": "tel:+642108498991",
+    "instagram": "https://www.instagram.com/once_more_nz/",
+    "instagram_handle": "@once_more_nz"
+  },
+  "location": {
+    "street_address": "182 Symonds Street",
+    "suburb": "Eden Terrace",
+    "city": "Auckland",
+    "postal_code": "1010",
+    "country": "New Zealand",
+    "country_code": "NZ",
+    "full_formatted_address": "182 Symonds Street, Eden Terrace, Auckland 1010, New Zealand",
+    "coordinates": {
+      "latitude": -36.863458,
+      "longitude": 174.7613921
+    },
+    "plus_code": "4QP6+JH Auckland",
+    "timezone": "Pacific/Auckland"
+  },
+  "opening_hours": {
+    "schedule": [
+      {
+        "day": "Monday",
+        "open": "07:30",
+        "close": "15:00",
+        "formatted": "7:30 AM \u2013 3:00 PM",
+        "is_closed": false
+      },
+      {
+        "day": "Tuesday",
+        "open": "07:30",
+        "close": "15:00",
+        "formatted": "7:30 AM \u2013 3:00 PM",
+        "is_closed": false
+      },
+      {
+        "day": "Wednesday",
+        "open": "07:30",
+        "close": "15:00",
+        "formatted": "7:30 AM \u2013 3:00 PM",
+        "is_closed": false
+      },
+      {
+        "day": "Thursday",
+        "open": "07:30",
+        "close": "15:00",
+        "formatted": "7:30 AM \u2013 3:00 PM",
+        "is_closed": false
+      },
+      {
+        "day": "Friday",
+        "open": "07:30",
+        "close": "15:00",
+        "formatted": "7:30 AM \u2013 3:00 PM",
+        "is_closed": false
+      },
+      {
+        "day": "Saturday",
+        "open": null,
+        "close": null,
+        "formatted": "Closed",
+        "is_closed": true
+      },
+      {
+        "day": "Sunday",
+        "open": null,
+        "close": null,
+        "formatted": "Closed",
+        "is_closed": true
+      }
+    ],
+    "note": "Open Monday through Friday for breakfast, commuter espresso, lunch, and afternoon tea. Closed on weekends."
+  },
+  "ratings_and_reviews_summary": {
+    "average_rating": 4.7,
+    "total_reviews_count": 89,
+    "rating_distribution": {
+      "5_star": 79,
+      "4_star": 4,
+      "3_star": 0,
+      "2_star": 3,
+      "1_star": 3
+    },
+    "recommendation_rate_pct": 93.3
+  },
+  "pricing": {
+    "price_tier": "$",
+    "price_range_nzd": " \u2013 0 per person",
+    "average_spend_nzd": " \u2013  NZD"
+  },
+  "service_options": {
+    "dine_in": true,
+    "takeaway": true,
+    "delivery": false,
+    "curbside_pickup": false,
+    "reservations": false,
+    "walk_ins_welcome": true
+  },
+  "accessibility": {
+    "wheelchair_accessible_entrance": true,
+    "wheelchair_accessible_seating": true,
+    "wheelchair_accessible_restroom": false
+  },
+  "atmosphere_and_vibe": {
+    "vibe": "Cozy, aesthetic, antique, quiet sanctuary, warm lighting, fine porcelain teaware",
+    "noise_level": "Very quiet (ideal for focus, quiet conversations, reading, and remote laptop work)",
+    "decor_style": "Curated vintage wooden furniture, Spanish ceramics showcase, antique teaware collection, dried botanical floral arrangements",
+    "crowd": "Locals, remote professionals, students, tea and specialty coffee connoisseurs"
+  },
+  "signature_offerings": [
+    "Sea Salt Iced Coffee (Signature House Specialty)",
+    "Iced Dirty Latte with Mango Dessert Plate",
+    "Artisan Espresso Drinks & Latte Art",
+    "Certified Organic Zealong New Zealand Teas",
+    "Lupicia Japanese Flavored Teas (Momo Oolong, Grapefruit Green, Rose Royal)",
+    "Fresh Gourmet Cabinet Savouries (Quiches, Croissants, Cajun Chicken Wraps)",
+    "French Macarons, Lemon Tarts, Pecan Tarts & Baked Muffins",
+    "Boutique Spanish Ceramic Cups and Tableware for purchase"
+  ]
+}

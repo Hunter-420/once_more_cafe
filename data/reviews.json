@@ -1,0 +1,220 @@
+{
+  "total_reviews_scraped": 5,
+  "overall_business_rating": 4.7,
+  "total_business_ratings_count": 89,
+  "reviews": [
+    {
+      "review_index": 1,
+      "author_name": "\uc774\uc694",
+      "author_avatar": {
+        "local_path": "images/avatars/avatar_01_iyo.jpg",
+        "remote_url": "https://lh3.googleusercontent.com/a-/ALV-UjW6XBDrlU5EPx7oA2kcRDenYRLK4lDoRvqxXL2NxNhidBpRGxVM=s120-c-rp-mo-br100"
+      },
+      "author_google_profile": "https://www.google.com/maps/contrib/114808822302747714187/reviews?hl=en-GB",
+      "rating": 5,
+      "review_date": "2025-05-11",
+      "review_datetime_iso": "2025-05-11T15:30:51.234708",
+      "review_text": "This cafe offers a variety of tea options. I tried the rose something tea, and it had a lovely strawberry-like aroma and taste. The atmosphere was warm and slightly fancy. The staff were also very friendly and welcoming. I\u2019d love to come back again.",
+      "dining_aspects": {
+        "Did you dine in, take away or get delivery?": "Dine in",
+        "How much did you spend per person?": "$1\u201310",
+        "Food": 5,
+        "Service": 5,
+        "Atmosphere": 5,
+        "How would you describe the noise level?": "Very quiet",
+        "How long did you wait for a table?": "No wait"
+      },
+      "photos": [
+        {
+          "photo_id": "CIHM0ogKEN2qw6e899r0_wE",
+          "filename": "review_photo_05.jpg",
+          "relative_path": "images/review_photo_05.jpg",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "photo_id": "CIHM0ogKELaF1MqOsu6wsgE",
+          "filename": "review_photo_06.jpg",
+          "relative_path": "images/review_photo_06.jpg",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "photo_id": "CIHM0ogKEMD3uvr1886yLg",
+          "filename": "review_photo_07.jpg",
+          "relative_path": "images/review_photo_07.jpg",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "photo_id": "CIHM0ogKEPWY4MCZjsfXdg",
+          "filename": "review_photo_08.jpg",
+          "relative_path": "images/review_photo_08.jpg",
+          "width": 3024,
+          "height": 4032
+        }
+      ]
+    },
+    {
+      "review_index": 2,
+      "author_name": "Massage Guy (Anatoly)",
+      "author_avatar": {
+        "local_path": "images/avatars/avatar_02_anatoly.jpg",
+        "remote_url": "https://lh3.googleusercontent.com/a/ACg8ocLPyhoiOMiPCqhzoeY3841v0lXcZ9u0HGml4-7cQwT2QTUWf-Q=s120-c-rp-mo-ba12-br100"
+      },
+      "author_google_profile": "https://www.google.com/maps/contrib/113086051138797955445/reviews?hl=en-GB",
+      "rating": 5,
+      "review_date": "2025-09-09",
+      "review_datetime_iso": "2025-09-09T13:23:49.638771",
+      "review_text": "A wonderful little spot! The cafe is warm, cozy, and has such a welcoming atmosphere. It\u2019s peaceful and quiet, perfect for relaxing, reading, or catching up with a friend. The location couldn\u2019t be better \u2014 tucked away just enough to feel calm, yet still very convenient. Truly one of the nicest places to enjoy a coffee in comfort.",
+      "dining_aspects": {
+        "Food": 5,
+        "Service": 5,
+        "Atmosphere": 5
+      },
+      "photos": [
+        {
+          "photo_id": "CIABIhAQhfFzQRFWdjXZ9R3WZp5J",
+          "filename": "review_photo_09.jpg",
+          "relative_path": "images/review_photo_09.jpg",
+          "width": 2448,
+          "height": 3264
+        }
+      ]
+    },
+    {
+      "review_index": 3,
+      "author_name": "Adam Park",
+      "author_avatar": {
+        "local_path": "images/avatars/avatar_03_adam_park.jpg",
+        "remote_url": "https://lh3.googleusercontent.com/a-/ALV-UjW-A0zqeMjHPD4TWCQGESB1vRbYZXJSNfjunEREHSyy3nfyHc9r=s120-c-rp-mo-ba12-br100"
+      },
+      "author_google_profile": "https://www.google.com/maps/contrib/112868127605103612209/reviews?hl=en-GB",
+      "rating": 5,
+      "review_date": "2023-05-09",
+      "review_datetime_iso": "2023-05-09T22:07:10.654601",
+      "review_text": "I have been coming here regularly for over six months. Lovely little cafe with a variety of drinks and light food available. I really like the various teas they have in stock, as well as the sandwiches. The staff are so kind and sweet, and make me feel at home! Overall, the cafe has a lovely atmosphere!",
+      "dining_aspects": {},
+      "photos": [
+        {
+          "photo_id": "CIHM0ogKEICAgICxiP3hOw",
+          "filename": "gallery_01.jpg",
+          "relative_path": "images/gallery_01.jpg",
+          "width": 4032,
+          "height": 3024
+        },
+        {
+          "photo_id": "CIHM0ogKEICAgICxiP3huwE",
+          "filename": "review_photo_10.jpg",
+          "relative_path": "images/review_photo_10.jpg",
+          "width": 4032,
+          "height": 3024
+        },
+        {
+          "photo_id": "CIHM0ogKEICAgICxiP3hew",
+          "filename": "review_photo_11.jpg",
+          "relative_path": "images/review_photo_11.jpg",
+          "width": 4032,
+          "height": 3024
+        },
+        {
+          "photo_id": "CIHM0ogKEICAgICxiP3h-wE",
+          "filename": "review_photo_12.jpg",
+          "relative_path": "images/review_photo_12.jpg",
+          "width": 4032,
+          "height": 3024
+        },
+        {
+          "photo_id": "CIHM0ogKEICAgICxiP3hBw",
+          "filename": "review_photo_13.jpg",
+          "relative_path": "images/review_photo_13.jpg",
+          "width": 4032,
+          "height": 3024
+        }
+      ]
+    },
+    {
+      "review_index": 4,
+      "author_name": "Teddy",
+      "author_avatar": {
+        "local_path": "images/avatars/avatar_04_teddy.jpg",
+        "remote_url": "https://lh3.googleusercontent.com/a-/ALV-UjUsFr5b6-qW32PbTMPR0swZ568giwF_Fuf2dcEFFxwsgWRJ-cfF=s120-c-rp-mo-ba12-br100"
+      },
+      "author_google_profile": "https://www.google.com/maps/contrib/100343888742028462637/reviews?hl=en-GB",
+      "rating": 5,
+      "review_date": "2022-11-22",
+      "review_datetime_iso": "2022-11-22T16:35:27.181445",
+      "review_text": "I came to Auckland in September, went around everywhere and tried a couple of cafes and my heart is sold to Once More - Cafe & Store !\nI'm a coffee person and let me tell you, the drinks that were served to me were out of this world. It's a must try place ! Also, please drink at the cafe instead of doing the takeaways cause the vibes are so cozy !\nThe interior is so cute and amazing, it feels like home. It makes you feel like you want to work there. I would love to work :)\nKudos to the team for brewing such amazing coffee and keeping the decoration friendly and just wholesome.",
+      "dining_aspects": {
+        "Did you dine in, take away or get delivery?": "Dine in"
+      },
+      "photos": [
+        {
+          "photo_id": "CIHM0ogKEICAgID-lKyc7QE",
+          "filename": "review_photo_14.jpg",
+          "relative_path": "images/review_photo_14.jpg",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "photo_id": "CIHM0ogKEICAgID-lKycHQ",
+          "filename": "review_photo_15.jpg",
+          "relative_path": "images/review_photo_15.jpg",
+          "width": 2932,
+          "height": 3840
+        },
+        {
+          "photo_id": "CIHM0ogKEICAgID-lKycnQE",
+          "filename": "review_photo_16.jpg",
+          "relative_path": "images/review_photo_16.jpg",
+          "width": 3024,
+          "height": 4032
+        }
+      ]
+    },
+    {
+      "review_index": 5,
+      "author_name": "Royal Reed",
+      "author_avatar": {
+        "local_path": "images/avatars/avatar_05_royal_reed.jpg",
+        "remote_url": "https://lh3.googleusercontent.com/a/ACg8ocL0t4_cQcGNSkZ_SBk8GlMutB4hSZzqjhXIc54XX5fuqBNQ_w=s120-c-rp-mo-ba12-br100"
+      },
+      "author_google_profile": "https://www.google.com/maps/contrib/107732971929622366623/reviews?hl=en-GB",
+      "rating": 5,
+      "review_date": "2024-11-26",
+      "review_datetime_iso": "2024-11-26T17:28:11.610937",
+      "review_text": "Beautifully curated spot for meeting working remote or just some me time. I like their interior and artistic display of the Spanish ceramics. The wonderful sea salt latte was surprisingly tasty.",
+      "dining_aspects": {
+        "Did you dine in, take away or get delivery?": "Dine in",
+        "What did you get?": "Breakfast",
+        "How much did you spend per person?": "$1\u201310",
+        "Food": 5,
+        "Service": 5,
+        "Atmosphere": 5
+      },
+      "photos": [
+        {
+          "photo_id": "CIHM0ogKEICAgICPufnQbg",
+          "filename": "review_photo_17.jpg",
+          "relative_path": "images/review_photo_17.jpg",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "photo_id": "CIHM0ogKEICAgICPufnQ7gE",
+          "filename": "review_photo_18.jpg",
+          "relative_path": "images/review_photo_18.jpg",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "photo_id": "CIHM0ogKEICAgICPufnQHg",
+          "filename": "review_photo_19.jpg",
+          "relative_path": "images/review_photo_19.jpg",
+          "width": 3024,
+          "height": 4032
+        }
+      ]
+    }
+  ]
+}

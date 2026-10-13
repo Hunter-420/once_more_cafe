@@ -1,0 +1,336 @@
+{
+  "currency": "NZD",
+  "price_display_format": "${price:.2f}",
+  "last_verified": "2026-10-13",
+  "source": "Verified from on-site chalkboard menus, display cabinet labels, and customer photo documentation",
+  "sections": [
+    {
+      "section_id": "coffee_and_espresso",
+      "title": "Espresso & Coffee Classics",
+      "description": "Carefully crafted with specialty beans roasted locally and brewed on commercial espresso machines.",
+      "items": [
+        {
+          "name": "Black Coffee",
+          "subname": "Espresso, Long Black, Americano",
+          "description": "Rich double-shot extraction highlighting nuanced origin notes and clean finish.",
+          "price_hot": 4.5,
+          "price_iced": null,
+          "is_signature": false,
+          "dietary": ["Vegan", "Gluten-Free", "Dairy-Free"]
+        },
+        {
+          "name": "White Coffee",
+          "subname": "Flat White, Latte, Cappuccino",
+          "description": "Velvety textured milk poured over double espresso with delicate latte art.",
+          "price_hot": 5.0,
+          "price_iced": 5.5,
+          "is_signature": false,
+          "dietary": ["Vegetarian"]
+        },
+        {
+          "name": "Mocha",
+          "subname": "Espresso with artisan chocolate",
+          "description": "Rich dark cocoa blended with hot espresso and silky steamed milk.",
+          "price_hot": 5.5,
+          "price_iced": 6.0,
+          "is_signature": false,
+          "dietary": ["Vegetarian"]
+        },
+        {
+          "name": "Fluffy",
+          "subname": "Kids warm milk froth",
+          "description": "Fluffy frothed warm milk dusted with cocoa, served with marshmallows.",
+          "price_hot": 2.0,
+          "price_iced": null,
+          "is_signature": false,
+          "dietary": ["Vegetarian"]
+        }
+      ],
+      "add_ons": [
+        {"name": "Large Cup Upgrade", "price": 0.5},
+        {"name": "Plant-Based Milk (Oat / Almond / Soy)", "price": 0.8},
+        {"name": "Flavoured Syrup (Vanilla / Caramel / Hazelnut)", "price": 0.8},
+        {"name": "Extra Espresso Shot", "price": 0.8},
+        {"name": "Iced Option Upgrade", "price": 0.5}
+      ]
+    },
+    {
+      "section_id": "signatures_and_specialties",
+      "title": "House Signatures & Specialty Drinks",
+      "description": "Handcrafted signature drinks that define the Once More experience.",
+      "items": [
+        {
+          "name": "Sea Salt Coffee",
+          "subname": "Sea Salt Cream Cold Brew / Iced Latte",
+          "description": "Our most loved house specialty: rich espresso layered over chilled milk, topped with a velvety savoury sea-salt cream foam.",
+          "price_hot": null,
+          "price_iced": 6.8,
+          "is_signature": true,
+          "dietary": ["Vegetarian"]
+        },
+        {
+          "name": "Dirty Latte",
+          "subname": "Double Ristretto over chilled rich milk",
+          "description": "Two hot ristretto shots pulled directly onto cold, heavy dairy milk creating bold contrasting layers.",
+          "price_hot": null,
+          "price_iced": 6.5,
+          "is_signature": true,
+          "dietary": ["Vegetarian"]
+        },
+        {
+          "name": "Matcha Latte",
+          "subname": "Japanese Uji green tea matcha",
+          "description": "Finely ground Japanese matcha whisked smooth with steamed velvety milk.",
+          "price_hot": 5.8,
+          "price_iced": 6.5,
+          "is_signature": true,
+          "dietary": ["Vegetarian"]
+        },
+        {
+          "name": "Chai Latte",
+          "subname": "Spiced aromatic blend",
+          "description": "Aromatic spices slow-infused with black tea and honeyed milk, topped with cinnamon.",
+          "price_hot": 5.5,
+          "price_iced": 6.0,
+          "is_signature": false,
+          "dietary": ["Vegetarian"]
+        },
+        {
+          "name": "Hot Chocolate",
+          "subname": "Rich Dutch cocoa blend",
+          "description": "Decadent creamy chocolate melted with textured milk and chocolate dusting.",
+          "price_hot": 5.0,
+          "price_iced": 5.5,
+          "is_signature": false,
+          "dietary": ["Vegetarian"]
+        },
+        {
+          "name": "Lemon Honey Infusion",
+          "subname": "Warm soothing tonic",
+          "description": "Fresh lemon steep with New Zealand honey, perfect for calming and warming.",
+          "price_hot": 5.0,
+          "price_iced": 5.5,
+          "is_signature": false,
+          "dietary": ["Vegetarian", "Gluten-Free", "Dairy-Free"]
+        },
+        {
+          "name": "House-made Fruit Soda",
+          "subname": "Sparkling botanical refresher",
+          "description": "Craft fruit puree and botanical syrups served over ice with sparkling water.",
+          "price_hot": null,
+          "price_iced": 6.0,
+          "is_signature": false,
+          "dietary": ["Vegan", "Gluten-Free", "Dairy-Free"]
+        },
+        {
+          "name": "Fresh Fruit Smoothie",
+          "subname": "Blended seasonal fruits",
+          "description": "Real fruit blended with milk or plant milk base for a nourishing energy boost.",
+          "price_hot": null,
+          "price_iced": 6.5,
+          "is_signature": false,
+          "dietary": ["Vegetarian"]
+        }
+      ]
+    },
+    {
+      "section_id": "fine_teas",
+      "title": "Certified Organic & Japanese Teas",
+      "description": "Served in individual ceramic teaware and vintage teapots for an authentic, mindful tea experience.",
+      "items": [
+        {
+          "name": "Zealong Sweet Amber Black Tea",
+          "subname": "Certified Organic Waikato NZ Estate",
+          "description": "Smooth, naturally sweet organic black tea with floral honey and malt undertones.",
+          "price": 6.0,
+          "brand": "Zealong Tea Estate (NZ)",
+          "is_signature": true,
+          "dietary": ["Vegan", "Gluten-Free", "Organic"]
+        },
+        {
+          "name": "Zealong Lady Gatsby Green Tea",
+          "subname": "Organic green tea with rose, manuka & cinnamon",
+          "description": "A fragrant, uplifting botanical green tea blend featuring native New Zealand manuka.",
+          "price": 6.0,
+          "brand": "Zealong Tea Estate (NZ)",
+          "is_signature": true,
+          "dietary": ["Vegan", "Gluten-Free", "Organic"]
+        },
+        {
+          "name": "Zealong Aromatic Oolong Tea",
+          "subname": "Single-origin roasted oolong",
+          "description": "Traditional roasted oolong offering complex orchid aromatics and rich lingering sweetness.",
+          "price": 6.0,
+          "brand": "Zealong Tea Estate (NZ)",
+          "is_signature": false,
+          "dietary": ["Vegan", "Gluten-Free", "Organic"]
+        },
+        {
+          "name": "Zealong Ice Breaker Botanical",
+          "subname": "Peppermint, spearmint & organic leaves",
+          "description": "Crisp and refreshing botanical infusion, naturally caffeine-free.",
+          "price": 6.0,
+          "brand": "Zealong Tea Estate (NZ)",
+          "is_signature": false,
+          "dietary": ["Vegan", "Gluten-Free", "Organic", "Caffeine-Free"]
+        },
+        {
+          "name": "Lupicia Momo Oolong",
+          "subname": "Japanese White Peach Oolong",
+          "description": "Delicate Taiwanese oolong blended with sweet Japanese white peach aroma.",
+          "price": 6.0,
+          "brand": "Lupicia (Japan)",
+          "is_signature": true,
+          "dietary": ["Vegan", "Gluten-Free"]
+        },
+        {
+          "name": "Lupicia Rose Royal",
+          "subname": "Black tea infused with strawberry & rose",
+          "description": "Elegantly blended black tea with sweet strawberry notes and tender rose petals, as praised by customer reviews.",
+          "price": 6.0,
+          "brand": "Lupicia (Japan)",
+          "is_signature": true,
+          "dietary": ["Vegan", "Gluten-Free"]
+        },
+        {
+          "name": "Lupicia Grapefruit Green Tea",
+          "subname": "Japanese Sencha with zesty grapefruit",
+          "description": "Refreshing green tea with citrus grapefruit notes, crisp served hot or chilled.",
+          "price": 6.0,
+          "brand": "Lupicia (Japan)",
+          "is_signature": false,
+          "dietary": ["Vegan", "Gluten-Free"]
+        }
+      ]
+    },
+    {
+      "section_id": "cabinet_savouries",
+      "title": "Fresh Cabinet Savouries",
+      "description": "Baked fresh daily and toasted to perfection upon ordering. Ideal for quick lunches or sit-down meals.",
+      "items": [
+        {
+          "name": "Bacon & Cheese Savoury Quiche",
+          "subname": "Flaky pastry with savoury egg custard",
+          "description": "Golden crust loaded with smoked bacon lardons, aged cheddar cheese, and fresh garden herbs.",
+          "price": 7.5,
+          "is_signature": false,
+          "dietary": []
+        },
+        {
+          "name": "Ham & Cheese Toasted Croissant",
+          "subname": "Buttery French pastry",
+          "description": "Flaky French all-butter croissant filled with premium shaved ham and melted mozzarella.",
+          "price": 7.0,
+          "is_signature": false,
+          "dietary": []
+        },
+        {
+          "name": "Roasted Mushroom & Herb Pastry",
+          "subname": "Vegetarian savory parcel",
+          "description": "Slow-roasted garlic mushrooms, thyme, and creamy cheese wrapped in crisp puff pastry.",
+          "price": 7.5,
+          "is_signature": false,
+          "dietary": ["Vegetarian"]
+        },
+        {
+          "name": "Bacon & Egg Breakfast Bap",
+          "subname": "Warm morning sandwich",
+          "description": "Crispy bacon, fried egg, and relish packed in a soft brioche bap.",
+          "price": 8.5,
+          "is_signature": false,
+          "dietary": []
+        },
+        {
+          "name": "Cajun Chicken Salad Wrap",
+          "subname": "Light spiced wrap",
+          "description": "Succulent spiced chicken breast, crunchy greens, tomatoes, and aioli in a soft tortilla.",
+          "price": 9.5,
+          "is_signature": true,
+          "dietary": []
+        },
+        {
+          "name": "Artisan Beef Sandwich",
+          "subname": "Hearty lunchtime favourite",
+          "description": "Tender seasoned beef cuts, caramelised onions, pickles, and mustard on crusty sourdough.",
+          "price": 9.0,
+          "is_signature": true,
+          "dietary": []
+        },
+        {
+          "name": "Beef Meatball Pasta Bake",
+          "subname": "Daily warm hot pot",
+          "description": "Homestyle Italian-style beef meatballs in rich tomato sugo over pasta, topped with melted parmesan.",
+          "price": 10.0,
+          "is_signature": false,
+          "dietary": []
+        }
+      ]
+    },
+    {
+      "section_id": "bakery_and_sweets",
+      "title": "Bakery & Sweet Treats",
+      "description": "Indulgent treats paired perfectly with espresso or a pot of loose-leaf tea.",
+      "items": [
+        {
+          "name": "French Macarons",
+          "subname": "Artisan almond meringue shells",
+          "description": "Delicate Parisian macarons in alternating flavors: Pistachio, Raspberry, Dark Chocolate, Salted Caramel.",
+          "price_single": 3.8,
+          "price_pair": 7.0,
+          "price": 3.8,
+          "is_signature": true,
+          "dietary": ["Vegetarian", "Gluten-Free"]
+        },
+        {
+          "name": "Zesty Lemon Tart",
+          "subname": "Buttery shortbread crust",
+          "description": "Tangy lemon curd set in crisp pastry shell, lightly glazed with icing sugar.",
+          "price": 6.5,
+          "is_signature": false,
+          "dietary": ["Vegetarian"]
+        },
+        {
+          "name": "Classic Pecan Tart",
+          "subname": "Caramelised nut tart",
+          "description": "Toasted whole pecans baked in rich maple and brown sugar caramel filling.",
+          "price": 6.5,
+          "is_signature": false,
+          "dietary": ["Vegetarian"]
+        },
+        {
+          "name": "Blueberry Cream Cheese Muffin",
+          "subname": "Daily baked muffin",
+          "description": "Loaded with juicy blueberries and a molten cream cheese center, topped with crumble.",
+          "price": 5.5,
+          "is_signature": false,
+          "dietary": ["Vegetarian"]
+        }
+      ]
+    },
+    {
+      "section_id": "store_boutique",
+      "title": "The Store: Boutique Curations & Homeware",
+      "description": "Take the Once More aesthetic home with you. Available for purchase in store.",
+      "items": [
+        {
+          "name": "Artisan Spanish Ceramics",
+          "description": "Hand-crafted ceramic coffee mugs, latte cups, teacups, and tableware imported directly from Spain.",
+          "price_range": "$22 – $48 NZD",
+          "is_signature": true
+        },
+        {
+          "name": "Fine Porcelain Teaware & Teapots",
+          "description": "Selected antique-inspired porcelain sets, saucers, and personal infuser pots.",
+          "price_range": "$28 – $65 NZD",
+          "is_signature": true
+        },
+        {
+          "name": "Retail Packaged Teas (Zealong & Lupicia)",
+          "description": "Sealed collector tins of your favourite organic New Zealand and Japanese teas.",
+          "price_range": "$18 – $35 NZD",
+          "is_signature": false
+        }
+      ]
+    }
+  ]
+}

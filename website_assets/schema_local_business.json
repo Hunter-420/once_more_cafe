@@ -1,0 +1,152 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["CafeOrCoffeeShop", "Store"],
+  "@id": "https://www.google.com/maps/place/Once+More+-+Cafe+%26+Store/@-36.863458,174.7613921,17z/data=!3m1!4b1!4m6!3m5!1s0x6d0d475842ae180f:0xd078ef32c08bc923!8m2!3d-36.863458!4d174.7613921!16s%2Fg%2F11rv17b51m",
+  "name": "Once More - Cafe & Store",
+  "alternateName": "Once More Cafe",
+  "description": "An intimate sanctuary in Eden Terrace, Auckland offering specialty espresso, signature sea salt coffee, certified organic Zealong NZ & Lupicia Japanese teas, daily fresh cabinet savouries, fine French macarons, and curated artisan Spanish ceramics.",
+  "url": "https://maps.app.goo.gl/sYgYipkAPVMcbTCM9",
+  "sameAs": [
+    "https://www.instagram.com/once_more_nz/",
+    "https://maps.app.goo.gl/sYgYipkAPVMcbTCM9"
+  ],
+  "telephone": "+64 210 849 8991",
+  "priceRange": "$",
+  "currenciesAccepted": "NZD",
+  "paymentAccepted": "Cash, Credit Card, EFTPOS, Contactless",
+  "servesCuisine": [
+    "Specialty Coffee",
+    "Artisan Tea",
+    "Cafe",
+    "Pastries",
+    "Brunch",
+    "Bakery"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "182 Symonds Street",
+    "addressLocality": "Eden Terrace",
+    "addressRegion": "Auckland",
+    "postalCode": "1010",
+    "addressCountry": "NZ"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -36.863458,
+    "longitude": 174.7613921
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:30",
+      "closes": "15:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "89",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Teddy"
+      },
+      "datePublished": "2022-11-22",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "I came to Auckland in September, went around everywhere and tried a couple of cafes and my heart is sold to Once More - Cafe & Store! I'm a coffee person and let me tell you, the drinks that were served to me were out of this world. It's a must try place! Also, please drink at the cafe instead of doing the takeaways cause the vibes are so cozy! The interior is so cute and amazing, it feels like home."
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Massage Guy (Anatoly)"
+      },
+      "datePublished": "2025-09-09",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "A wonderful little spot! The cafe is warm, cozy, and has such a welcoming atmosphere. It’s peaceful and quiet, perfect for relaxing, reading, or catching up with a friend. The location couldn’t be better — tucked away just enough to feel calm, yet still very convenient. Truly one of the nicest places to enjoy a coffee in comfort."
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Adam Park"
+      },
+      "datePublished": "2023-05-09",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "I have been coming here regularly for over six months. Lovely little cafe with a variety of drinks and light food available. I really like the various teas they have in stock, as well as the sandwiches. The staff are so kind and sweet, and make me feel at home! Overall, the cafe has a lovely atmosphere!"
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Royal Reed"
+      },
+      "datePublished": "2024-11-26",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Beautifully curated spot for meeting working remote or just some me time. I like their interior and artistic display of the Spanish ceramics. The wonderful sea salt latte was surprisingly tasty."
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "이요"
+      },
+      "datePublished": "2025-05-11",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "This cafe offers a variety of tea options. I tried the rose something tea, and it had a lovely strawberry-like aroma and taste. The atmosphere was warm and slightly fancy. The staff were also very friendly and welcoming. I’d love to come back again."
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Wheelchair-accessible entrance",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Wheelchair-accessible seating",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Dine-in",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Takeaway",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Quiet work & study friendly atmosphere",
+      "value": true
+    }
+  ]
+}

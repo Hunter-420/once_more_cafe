@@ -1,0 +1,110 @@
+{
+  "summary": "Overall sentiment is overwhelmingly positive (93%+ 5-star rating). Customers highlight the extraordinarily welcoming and warm staff, the quiet and aesthetic sanctuary vibe, exceptional specialty coffee (especially the signature sea salt latte), high-end organic teas served in delicate porcelain sets, and fresh cabinet savouries.",
+  "overall_rating": 4.7,
+  "total_reviews": 89,
+  "sentiment_breakdown": {
+    "positive_percentage": 93.3,
+    "neutral_percentage": 0.0,
+    "negative_percentage": 6.7
+  },
+  "google_maps_mention_chips": [
+    {
+      "topic": "friendly staff",
+      "mentions": 21,
+      "category": "Service & Hospitality"
+    },
+    {
+      "topic": "welcoming staff",
+      "mentions": 6,
+      "category": "Service & Hospitality"
+    },
+    {
+      "topic": "cozy space",
+      "mentions": 4,
+      "category": "Atmosphere & Decor"
+    },
+    {
+      "topic": "desserts",
+      "mentions": 4,
+      "category": "Food & Drinks"
+    },
+    {
+      "topic": "tea sets",
+      "mentions": 3,
+      "category": "Food & Drinks"
+    },
+    {
+      "topic": "comfy decor",
+      "mentions": 3,
+      "category": "Atmosphere & Decor"
+    },
+    {
+      "topic": "cozy cafe",
+      "mentions": 2,
+      "category": "Atmosphere & Decor"
+    },
+    {
+      "topic": "sandwiches",
+      "mentions": 2,
+      "category": "Food & Drinks"
+    },
+    {
+      "topic": "savouries",
+      "mentions": 2,
+      "category": "Food & Drinks"
+    },
+    {
+      "topic": "cabinet food",
+      "mentions": 2,
+      "category": "Food & Drinks"
+    }
+  ],
+  "key_themes": [
+    {
+      "theme": "Exceptional Hospitality",
+      "mentions_total": 27,
+      "description": "Staff are described as incredibly kind, welcoming, and sweet, consistently making patrons feel at home.",
+      "sample_quotes": [
+        "The staff are so kind and sweet, and make me feel at home!",
+        "The staff were also very friendly and welcoming. I\u2019d love to come back again."
+      ]
+    },
+    {
+      "theme": "Cozy & Aesthetic Atmosphere",
+      "mentions_total": 9,
+      "description": "A calm, peaceful sanctuary tucked away in Eden Terrace. Features vintage wooden furniture, Spanish ceramics, and fine porcelain teaware. Perfect for quiet reading, remote laptop work, and intimate catchups.",
+      "sample_quotes": [
+        "The interior is so cute and amazing, it feels like home. It makes you feel like you want to work there.",
+        "Beautifully curated spot for meeting working remote or just some me time. I like their interior and artistic display of the Spanish ceramics.",
+        "It\u2019s peaceful and quiet, perfect for relaxing, reading, or catching up with a friend."
+      ]
+    },
+    {
+      "theme": "Specialty Coffee & Unique Signatures",
+      "mentions_total": 18,
+      "description": "Masterfully crafted espresso, latte art, and innovative signature recipes like the Sea Salt Iced Latte and Dirty Latte.",
+      "sample_quotes": [
+        "I'm a coffee person and let me tell you, the drinks that were served to me were out of this world. It's a must try place !",
+        "The wonderful sea salt latte was surprisingly tasty.",
+        "Kudos to the team for brewing such amazing coffee."
+      ]
+    },
+    {
+      "theme": "Artisan Teas & Fine Teaware",
+      "mentions_total": 8,
+      "description": "Organic Zealong NZ and Lupicia Japanese teas presented in elegant ceramic teaware and teapots.",
+      "sample_quotes": [
+        "This cafe offers a variety of tea options. I tried the rose something tea, and it had a lovely strawberry-like aroma and taste.",
+        "I really like the various teas they have in stock."
+      ]
+    },
+    {
+      "theme": "Fresh Daily Cabinet Food & Savouries",
+      "mentions_total": 6,
+      "description": "Freshly prepared savoury quiches, artisan sandwiches, cajun wraps, croissants, and homemade pasta/meatball specials.",
+      "sample_quotes": [
+        "Lovely little cafe with a variety of drinks and light food available... as well as the sandwiches."
+      ]
+    }
+  ]
+}
