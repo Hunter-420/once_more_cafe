@@ -2,15 +2,15 @@
   "@context": "https://schema.org",
   "@type": ["CafeOrCoffeeShop", "Store"],
   "@id": "https://www.google.com/maps/place/Once+More+-+Cafe+%26+Store/@-36.863458,174.7613921,17z/data=!3m1!4b1!4m6!3m5!1s0x6d0d475842ae180f:0xd078ef32c08bc923!8m2!3d-36.863458!4d174.7613921!16s%2Fg%2F11rv17b51m",
-  "name": "Once More - Cafe & Store",
-  "alternateName": "Once More Cafe",
-  "description": "An intimate sanctuary in Eden Terrace, Auckland offering specialty espresso, signature sea salt coffee, certified organic Zealong NZ & Lupicia Japanese teas, daily fresh cabinet savouries, fine French macarons, and curated artisan Spanish ceramics.",
+  "name": "Aura Roast - Artisan Cafe & Roastery",
+  "alternateName": "Aura Roast Cafe",
+  "description": "An intimate sanctuary in Ponsonby, Auckland offering specialty espresso, signature sea salt coffee, certified organic Zealong NZ & Lupicia Japanese teas, daily fresh cabinet savouries, fine French macarons, and curated artisan Spanish ceramics.",
   "url": "https://maps.app.goo.gl/sYgYipkAPVMcbTCM9",
   "sameAs": [
-    "https://www.instagram.com/once_more_nz/",
+    "https://www.instagram.com/auraroast.akl/",
     "https://maps.app.goo.gl/sYgYipkAPVMcbTCM9"
   ],
-  "telephone": "+64 210 849 8991",
+  "telephone": "+64 9 378 4920",
   "priceRange": "$",
   "currenciesAccepted": "NZD",
   "paymentAccepted": "Cash, Credit Card, EFTPOS, Contactless",
@@ -24,10 +24,10 @@
   ],
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "182 Symonds Street",
-    "addressLocality": "Eden Terrace",
+    "streetAddress": "48 Ponsonby Road",
+    "addressLocality": "Ponsonby",
     "addressRegion": "Auckland",
-    "postalCode": "1010",
+    "postalCode": "1011",
     "addressCountry": "NZ"
   },
   "geo": {
@@ -63,7 +63,7 @@
         "ratingValue": "5",
         "bestRating": "5"
       },
-      "reviewBody": "I came to Auckland in September, went around everywhere and tried a couple of cafes and my heart is sold to Once More - Cafe & Store! I'm a coffee person and let me tell you, the drinks that were served to me were out of this world. It's a must try place! Also, please drink at the cafe instead of doing the takeaways cause the vibes are so cozy! The interior is so cute and amazing, it feels like home."
+      "reviewBody": "I came to Auckland in September, went around everywhere and tried a couple of cafes and my heart is sold to Aura Roast - Artisan Cafe & Roastery! I'm a coffee person and let me tell you, the drinks that were served to me were out of this world. It's a must try place! Also, please drink at the cafe instead of doing the takeaways cause the vibes are so cozy! The interior is so cute and amazing, it feels like home."
     },
     {
       "@type": "Review",

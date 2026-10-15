@@ -1,7 +1,7 @@
 {
-  "business_name": "Once More - Cafe & Store",
-  "display_name": "Once More",
-  "tagline": "Specialty Coffee, Fine Tea & Curated Homeware in Eden Terrace",
+  "business_name": "Aura Roast - Artisan Cafe & Roastery",
+  "display_name": "Aura Roast",
+  "tagline": "Specialty Coffee, Fine Tea & Curated Homeware in Ponsonby",
   "categories": [
     "Coffee shop",
     "Cafe",
@@ -19,20 +19,20 @@
     "maps_full_url": "https://www.google.com/maps/place/Once+More+-+Cafe+%26+Store/@-36.863458,174.7613921,17z/data=!3m1!4b1!4m6!3m5!1s0x6d0d475842ae180f:0xd078ef32c08bc923!8m2!3d-36.863458!4d174.7613921!16s%2Fg%2F11rv17b51m"
   },
   "contact": {
-    "phone_display": "0210 849 8991",
-    "phone_international": "+64 210 849 8991",
-    "phone_tel_link": "tel:+642108498991",
-    "instagram": "https://www.instagram.com/once_more_nz/",
-    "instagram_handle": "@once_more_nz"
+    "phone_display": "09 378 4920",
+    "phone_international": "+64 9 378 4920",
+    "phone_tel_link": "tel:+6493784920",
+    "instagram": "https://www.instagram.com/auraroast.akl/",
+    "instagram_handle": "@auraroast.akl"
   },
   "location": {
-    "street_address": "182 Symonds Street",
-    "suburb": "Eden Terrace",
+    "street_address": "48 Ponsonby Road",
+    "suburb": "Ponsonby",
     "city": "Auckland",
     "postal_code": "1010",
     "country": "New Zealand",
     "country_code": "NZ",
-    "full_formatted_address": "182 Symonds Street, Eden Terrace, Auckland 1010, New Zealand",
+    "full_formatted_address": "48 Ponsonby Road, Ponsonby, Auckland 1010, New Zealand",
     "coordinates": {
       "latitude": -36.863458,
       "longitude": 174.7613921

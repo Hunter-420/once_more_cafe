@@ -1,14 +1,14 @@
-# Once More - Cafe & Store | Website Copy & Wireframe Blueprint
+# Aura Roast - Artisan Cafe & Roastery | Website Copy & Wireframe Blueprint
 
 > **Ready-to-Use Website Copy, UI/UX Wireframe, and Technical SEO Architecture**  
-> Tailored specifically for building the official web presence of **Once More - Cafe & Store** (182 Symonds Street, Eden Terrace, Auckland).
+> Tailored specifically for building the official web presence of **Aura Roast - Artisan Cafe & Roastery** (48 Ponsonby Road, Ponsonby, Auckland).
 
 ---
 
 ## 1. Brand Identity & Creative Direction
 
 ### Brand Essence
-**Once More - Cafe & Store** is an intimate sanctuary where thoughtful hospitality meets artisanal craft. Nestled in Eden Terrace, Auckland, it balances the precision of specialty espresso, the mindful ritual of single-estate New Zealand and Japanese teas, freshly baked cabinet delicacies, and curated European homeware.
+**Aura Roast - Artisan Cafe & Roastery** is an intimate sanctuary where thoughtful hospitality meets artisanal craft. Nestled in Ponsonby, Auckland, it balances the precision of specialty espresso, the mindful ritual of single-estate New Zealand and Japanese teas, freshly baked cabinet delicacies, and curated European homeware.
 
 ### Brand Keywords
 `Warmth` · `Mindful Pace` · `Artisanal Simplicity` · `Ceramic Aesthetics` · `Quiet Sanctuary` · `Community Connection`
@@ -33,7 +33,7 @@
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────┐
-│  [Top Banner]: Open Weekdays 7:30 AM – 3:00 PM · 182 Symonds St · Call │
+│  [Top Banner]: Open Weekdays 7:30 AM – 3:00 PM · 182 Ponsonby Rd · Call │
 ├────────────────────────────────────────────────────────────────────────┤
 │  [Navigation Bar]:                                                     │
 │    Desktop: Logo | Our Story | Signatures | Menu | Gallery | Reviews   │
@@ -90,9 +90,9 @@
 ## 3. Production-Ready Website Copy
 
 ### Hero Section
-- **Kicker / Overline**: `Eden Terrace · Auckland`
+- **Kicker / Overline**: `Ponsonby · Auckland`
 - **Main Headline**: `A quiet pause in every cup.`
-- **Secondary Headline**: `An intimate sanctuary on Symonds Street blending masterfully pulled espresso, single-estate New Zealand & Japanese teas, fresh daily cabinet food, and curated Spanish ceramics.`
+- **Secondary Headline**: `An intimate sanctuary on Ponsonby Road blending masterfully pulled espresso, single-estate New Zealand & Japanese teas, fresh daily cabinet food, and curated Spanish ceramics.`
 - **Primary CTA**: `Explore Our Menu`
 - **Secondary CTA**: `Get Directions`
 - **Social Proof Metric**: `4.7 / 5.0 on Google (89 Reviews)`
@@ -103,7 +103,7 @@
 - **Section Title**: `OUR PHILOSOPHY`
 - **Headline**: `Designed for slowing down.`
 - **Body Copy**:
-  > Tucked away along Symonds Street in Eden Terrace, Once More was born out of a desire for warmth and mindful pause. We believe the best cafe experiences aren't rushed—they are savoured.
+  > Tucked away along Ponsonby Road in Ponsonby, Aura Roast was born out of a desire for warmth and mindful pause. We believe the best cafe experiences aren't rushed—they are savoured.
   >
   > Surrounded by vintage wooden furnishings, dried floral touches, and authentic Spanish ceramics, guests find a comforting haven whether stopping by for an early commuter espresso, indulging in an afternoon tea ceremony, or setting up a laptop for quiet remote work.
 - **Key Features**:
@@ -145,7 +145,7 @@
 ---
 
 ### Photo Gallery Captions
-- `Symonds St Entrance`: Morning exterior on Symonds Street
+- `Ponsonby Rd Entrance`: Morning exterior on Ponsonby Road
 - `Velvety Flat White`: Handcrafted latte art in ceramic cup
 - `Iced Dirty Latte`: Layered espresso and cold milk
 - `Espresso Counter & Bar`: Warm wooden bar ambiance
@@ -158,7 +158,7 @@
 
 ### Verified Customer Testimonials
 - **Teddy (Local Guide · Auckland)**:
-  *"I came to Auckland in September, went around everywhere and tried a couple of cafes and my heart is sold to Once More! I'm a coffee person and let me tell you, the drinks were out of this world. Please drink at the cafe cause the vibes are so cozy! The interior feels like home."*
+  *"I came to Auckland in September, went around everywhere and tried a couple of cafes and my heart is sold to Aura Roast! I'm a coffee person and let me tell you, the drinks were out of this world. Please drink at the cafe cause the vibes are so cozy! The interior feels like home."*
 - **Anatoly (Verified Guest)**:
   *"A wonderful little spot! The cafe is warm, cozy, and has such a welcoming atmosphere. It’s peaceful and quiet, perfect for relaxing, reading, or catching up with a friend. Tucked away just enough to feel calm, yet very convenient. Truly one of the nicest places to enjoy coffee."*
 - **Adam Park (Regular Customer)**:
@@ -177,9 +177,9 @@
    - Links directly to local Google Knowledge Graph entity `/g/11rv17b51m` and Google Maps Place ID `ChIJDxiuQlhHDW0RI8mLwDLveNA`.
 2. **Local Geotagging**:
    - `geo.region`: `NZ-AUK`
-   - `geo.placename`: `Eden Terrace, Auckland`
-   - `geo.position`: `-36.863458;174.7613921`
-   - `ICBM`: `-36.863458, 174.7613921`
+   - `geo.placename`: `Ponsonby, Auckland`
+   - `geo.position`: `-36.8576;174.7468`
+   - `ICBM`: `-36.8576, 174.7468`
 3. **Responsive Architecture**:
    - Zero emoji dependency: 100% vector SVG icons for retina crispness across all platforms.
    - Fluid typography with CSS `clamp()`.

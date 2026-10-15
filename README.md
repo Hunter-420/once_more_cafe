@@ -1,8 +1,8 @@
-# Once More - Cafe & Store | Scraped Dataset & Official Website
+# Aura Roast - Artisan Cafe & Roastery | Scraped Dataset & Official Website
 
 > **Live Website on GitHub Pages:** [https://hunter-420.github.io/once_more_cafe/](https://hunter-420.github.io/once_more_cafe/)
 
-This repository contains the complete dataset, high-resolution original photography, verified customer reviews, categorized menus, local SEO schema, and an ultra-responsive, accessible website for **Once More - Cafe & Store** (scraped directly from [Google Maps](https://maps.app.goo.gl/sYgYipkAPVMcbTCM9)).
+This repository contains the complete dataset, high-resolution original photography, verified customer reviews, categorized menus, local SEO schema, and an ultra-responsive, accessible website for **Aura Roast - Artisan Cafe & Roastery** (scraped directly from [Google Maps](https://maps.app.goo.gl/sYgYipkAPVMcbTCM9)).
 
 ---
 
@@ -57,14 +57,14 @@ once_more_cafe/
 
 | Attribute | Details |
 | :--- | :--- |
-| **Business Name** | Once More - Cafe & Store |
+| **Business Name** | Aura Roast - Artisan Cafe & Roastery |
 | **Category** | Specialty Coffee / Organic Estate Tea / Daily Bakery / Spanish Homeware |
 | **Overall Rating** | **4.7 / 5.0** (89 verified Google reviews, 88.8% 5-star rating) |
-| **Street Address** | 182 Symonds Street, Eden Terrace, Auckland 1010, New Zealand |
-| **Coordinates** | Latitude `-36.863458`, Longitude `174.7613921` |
+| **Street Address** | 48 Ponsonby Road, Ponsonby, Auckland 1011, New Zealand |
+| **Coordinates** | Latitude `-36.8576`, Longitude `174.7468` |
 | **Plus Code** | `4QP6+JH Auckland` |
-| **Phone** | `0210 849 8991` (International: `+64 210 849 8991`) |
-| **Instagram** | [@once_more_nz](https://www.instagram.com/once_more_nz/) |
+| **Phone** | `09 378 4920` (International: `+64 9 378 4920`) |
+| **Instagram** | [@auraroast.akl](https://www.instagram.com/auraroast.akl/) |
 | **Google Maps Link** | [maps.app.goo.gl/sYgYipkAPVMcbTCM9](https://maps.app.goo.gl/sYgYipkAPVMcbTCM9) |
 | **Google Place ID** | `ChIJDxiuQlhHDW0RI8mLwDLveNA` |
 | **Google CID** | `15022067756910627107` |
@@ -87,6 +87,7 @@ once_more_cafe/
 
 ## Key Website Features
 
+- **AI Barista Concierge Widget:** Live floating customer assistant trained on roastery blends, daily bakery items, opening hours, and real-time table booking requests.
 - **Vector Iconography:** 100% SVG vector icons for pin, phone, clock, espresso, teas, stars, and external links (zero emoji dependencies).
 - **Mobile Navigation Drawer:** Responsive slide-in drawer with accessible hamburger toggle on tablets and mobile devices.
 - **Interactive Menu Filtering:** Category filter buttons for Coffee, Signatures, Teas, Savouries, Sweets, and Ceramics.
