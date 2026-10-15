@@ -1607,19 +1607,19 @@
       const getStructuredResponse = (topic) => {
         if (topic === 'hours') {
           return `
-            <p><strong>Aura Roast Schedule &amp; Location</strong></p>
+            <p><strong>Aura Roast Operating Hours &amp; Location</strong></p>
             ${getLiveAucklandStatus()}
             <div class="ai-rich-card">
               <div class="ai-card-title">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                Operating Hours
+                Weekly Schedule
               </div>
               <div class="ai-schedule-row"><span class="ai-schedule-day">Monday – Friday</span><span>7:30 AM – 3:00 PM</span></div>
-              <div class="ai-schedule-row"><span class="ai-schedule-day">Saturday – Sunday</span><span>8:00 AM – 3:30 PM</span></div>
+              <div class="ai-schedule-row"><span class="ai-schedule-day">Saturday – Sunday</span><span style="color:#8C8276;">Closed (Private Events Only)</span></div>
             </div>
-            <p style="margin-top:6px; font-size:0.84rem; color:#5D5348;">Address: <strong>48 Ponsonby Road, Ponsonby</strong>. Espresso bar and fresh bakery ready from opening daily.</p>
+            <p style="margin-top:6px; font-size:0.84rem; color:#5D5348;">Address: <strong>48 Ponsonby Road, Ponsonby, Auckland</strong>. Fresh cabinet savouries and espresso ready from 7:30 AM.</p>
             <div class="ai-quick-suggestions">
-              <button type="button" class="ai-chip-btn" data-query="book">Reserve a Table</button>
+              <button type="button" class="ai-chip-btn" data-query="book">Reserve Weekday Table</button>
               <button type="button" class="ai-chip-btn" data-query="parking">Directions &amp; Parking</button>
             </div>
           `;
@@ -1627,36 +1627,44 @@
 
         if (topic === 'coffee') {
           return `
-            <p><strong>Our Roastery Coffee Menu &amp; Specialties</strong></p>
+            <p><strong>Our Roastery Coffee &amp; Artisan Tea Menu</strong></p>
             <div class="ai-rich-card">
               <div class="ai-card-title">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path></svg>
-                Craft Selection
+                Specialty Brews &amp; Teas
               </div>
               <div class="ai-product-grid">
                 <div class="ai-product-item">
-                  <div><span class="ai-product-name">Signature Sea Salt Cold Latte</span> <span class="ai-tag-pill">House #1</span></div>
-                  <span class="ai-product-price">$8.50 NZD</span>
+                  <div><span class="ai-product-name">Sea Salt Coffee</span> <span class="ai-tag-pill">House #1</span></div>
+                  <span class="ai-product-price">$6.80 NZD</span>
                 </div>
                 <div class="ai-product-item">
-                  <div><span class="ai-product-name">Single-Origin Ethiopian Guji Pour-Over</span> <span class="ai-tag-pill">Floral</span></div>
-                  <span class="ai-product-price">$6.00 NZD</span>
-                </div>
-                <div class="ai-product-item">
-                  <div><span class="ai-product-name">Artisan Flat White / Cappuccino</span> <span class="ai-tag-pill">Velvet</span></div>
-                  <span class="ai-product-price">$5.50 NZD</span>
-                </div>
-                <div class="ai-product-item">
-                  <div><span class="ai-product-name">Zealong Organic NZ Estate Tea</span> <span class="ai-tag-pill">Organic</span></div>
+                  <div><span class="ai-product-name">Dirty Latte (Double Ristretto)</span> <span class="ai-tag-pill">Signature</span></div>
                   <span class="ai-product-price">$6.50 NZD</span>
                 </div>
                 <div class="ai-product-item">
-                  <div><span class="ai-product-name">Ceremonial Uji Matcha Latte</span> <span class="ai-tag-pill">Stone-Ground</span></div>
-                  <span class="ai-product-price">$7.00 NZD</span>
+                  <div><span class="ai-product-name">White Coffee (Flat White, Latte, Cap)</span> <span class="ai-tag-pill">Velvet</span></div>
+                  <span class="ai-product-price">$5.00 NZD</span>
+                </div>
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Black Coffee (Espresso, Long Black)</span> <span class="ai-tag-pill">Single-Origin</span></div>
+                  <span class="ai-product-price">$4.50 NZD</span>
+                </div>
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Matcha Latte (Stone-Ground Uji)</span> <span class="ai-tag-pill">Japanese</span></div>
+                  <span class="ai-product-price">$5.80 NZD</span>
+                </div>
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Zealong Sweet Amber (Estate Organic)</span> <span class="ai-tag-pill">NZ Tea</span></div>
+                  <span class="ai-product-price">$6.00 NZD</span>
+                </div>
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Lupicia Momo Oolong / Rose Royal</span> <span class="ai-tag-pill">Pot Service</span></div>
+                  <span class="ai-product-price">$6.00 NZD</span>
                 </div>
               </div>
             </div>
-            <p style="margin-top:6px; font-size:0.84rem; color:#5D5348;">Alternative milks: Oatly Barista, Almond, Macadamia, Bonsoy (+$0.80). Swiss Water decaf available across all brews.</p>
+            <p style="margin-top:6px; font-size:0.84rem; color:#5D5348;">Alternative plant milks: Oatly Oat, Almond, Macadamia, Soy (+50c). Decaf available across all brews.</p>
             <div class="ai-quick-suggestions">
               <button type="button" class="ai-chip-btn" data-query="food">See Food Menu</button>
               <button type="button" class="ai-chip-btn" data-query="dietary">Dietary Options</button>
@@ -1666,39 +1674,43 @@
 
         if (topic === 'food') {
           return `
-            <p><strong>Artisan Bakery Cabinet &amp; Kitchen</strong></p>
+            <p><strong>Fresh Daily Cabinet Savouries &amp; Bakery</strong></p>
             <div class="ai-rich-card">
               <div class="ai-card-title">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2v20M2 2v20M14 2v6a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V2"></path></svg>
-                Fresh Morning Kitchen
+                Cabinet Selection
               </div>
               <div class="ai-product-grid">
                 <div class="ai-product-item">
-                  <div><span class="ai-product-name">Slow-Cooked Beef Brisket Toastie</span> <span class="ai-tag-pill">House Special</span></div>
-                  <span class="ai-product-price">$16.00 NZD</span>
-                </div>
-                <div class="ai-product-item">
-                  <div><span class="ai-product-name">Avocado &amp; Charred Corn Toastie</span> <span class="ai-tag-pill">Vegan</span></div>
-                  <span class="ai-product-price">$14.50 NZD</span>
-                </div>
-                <div class="ai-product-item">
-                  <div><span class="ai-product-name">Almond Citrus Polenta Cake</span> <span class="ai-tag-pill">Gluten-Free</span></div>
+                  <div><span class="ai-product-name">Bacon &amp; Cheese Quiche</span> <span class="ai-tag-pill">Warm</span></div>
                   <span class="ai-product-price">$7.50 NZD</span>
                 </div>
                 <div class="ai-product-item">
-                  <div><span class="ai-product-name">Free-Range Pork &amp; Fennel Roll</span> <span class="ai-tag-pill">Warm</span></div>
-                  <span class="ai-product-price">$9.00 NZD</span>
+                  <div><span class="ai-product-name">Ham &amp; Cheese Croissant</span> <span class="ai-tag-pill">Flaky Butter</span></div>
+                  <span class="ai-product-price">$7.00 NZD</span>
                 </div>
                 <div class="ai-product-item">
-                  <div><span class="ai-product-name">Artisan French Macarons (Pair)</span> <span class="ai-tag-pill">GF</span></div>
-                  <span class="ai-product-price">$8.00 NZD</span>
+                  <div><span class="ai-product-name">Cajun Chicken Wrap</span> <span class="ai-tag-pill">Lunch Pick</span></div>
+                  <span class="ai-product-price">$9.50 NZD</span>
+                </div>
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Zesty Lemon Tart</span> <span class="ai-tag-pill">Sweet</span></div>
+                  <span class="ai-product-price">$6.50 NZD</span>
+                </div>
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">French Macarons</span> <span class="ai-tag-pill">GF / Handmade</span></div>
+                  <span class="ai-product-price">$3.80 ea (2 for $7)</span>
+                </div>
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Spanish Imported Ceramics</span> <span class="ai-tag-pill">Boutique</span></div>
+                  <span class="ai-product-price">$22.00 – $48.00</span>
                 </div>
               </div>
             </div>
-            <p style="margin-top:6px; font-size:0.84rem; color:#5D5348;">Baked fresh in Ponsonby every morning at 6:30 AM.</p>
+            <p style="margin-top:6px; font-size:0.84rem; color:#5D5348;">Prepared fresh every weekday morning for dine-in or takeaway.</p>
             <div class="ai-quick-suggestions">
               <button type="button" class="ai-chip-btn" data-query="coffee">Pair with Coffee</button>
-              <button type="button" class="ai-chip-btn" data-query="book">Book a Table</button>
+              <button type="button" class="ai-chip-btn" data-query="book">Reserve a Table</button>
             </div>
           `;
         }
@@ -1712,10 +1724,10 @@
                 Dietary Highlights
               </div>
               <p style="font-size:0.83rem; color:#3F372F; margin:4px 0;">
-                • <strong>Gluten-Free:</strong> Almond Citrus Polenta Cake ($7.50), French Macarons ($4.00), and GF bread substitutions available for all toasties.<br>
-                • <strong>Vegan:</strong> Avocado &amp; Charred Corn Toastie ($14.50), Chia Berry Coconut Pots, and all plant milks.<br>
-                • <strong>Plant Milks (+$0.80):</strong> Oatly Barista Oat, Macadamia Milk, Almond Milk, Bonsoy.<br>
-                • <strong>Decaf:</strong> 100% Swiss Water process chemical-free decaf.
+                • <strong>Gluten-Free:</strong> Hand-crafted French Macarons ($3.80 each, 2 for $7.00) made with 100% almond flour.<br>
+                • <strong>Vegetarian Options:</strong> Zesty Lemon Tart ($6.50) and select morning pastries.<br>
+                • <strong>Plant Milks (+50c):</strong> Oatly Barista Oat, Pure Macadamia Milk, Almond Milk, and Bonsoy.<br>
+                • <strong>Decaf:</strong> Swiss Water solvent-free decaf available on all espresso options!
               </p>
             </div>
           `;
@@ -1730,9 +1742,9 @@
                 Amenities for Digital Creators
               </div>
               <p style="font-size:0.83rem; color:#3F372F; margin:4px 0;">
-                • <strong>Ultra-Fast Fiber Wi-Fi:</strong> Complimentary 300 Mbps fiber.<br>
-                • <strong>Power Outlets:</strong> Dedicated wall sockets along our Ponsonby Rd window bar.<br>
-                • <strong>Atmosphere:</strong> Quiet acoustic ambiance, lo-fi warm jazz, natural wood tables.
+                • <strong>High-Speed Fiber Wi-Fi:</strong> Complimentary fast fiber connection.<br>
+                • <strong>Quiet Acoustic Ambiance:</strong> Calming, lo-fi sanctuary designed for focus and reading.<br>
+                • <strong>Comfortable Seating:</strong> Cozy vintage wooden tables and window bar.
               </p>
             </div>
           `;
@@ -1747,9 +1759,9 @@
                 Arriving at 48 Ponsonby Road
               </div>
               <p style="font-size:0.83rem; color:#3F372F; margin:4px 0;">
-                • <strong>Street Parking:</strong> 60-min and 120-min parking bays directly along Ponsonby Road and adjacent Franklin Road.<br>
+                • <strong>Street Parking:</strong> 60-min and 120-min parking bays directly on Ponsonby Road and adjacent Franklin Road.<br>
                 • <strong>Public Transit:</strong> The Auckland InnerLink bus stops less than 40 metres away.<br>
-                • <strong>Outdoor Patio:</strong> Dog-friendly sheltered seating in front!
+                • <strong>Accessibility:</strong> Wheelchair accessible entrance and dine-in seating.
               </p>
             </div>
           `;
@@ -1768,20 +1780,30 @@
           session.booking.guests = text;
           session.state = 'BOOKING_TIME';
           return `
-            <p>Noted for <strong>${text}</strong>. What date and preferred time would you like to arrive?</p>
+            <p>Noted for <strong>${text}</strong>. What weekday date and preferred arrival time (between 7:30 AM and 2:30 PM) works best?</p>
             <div class="ai-quick-suggestions" style="margin-top:8px;">
               <button type="button" class="ai-chip-btn ai-inline-choice" data-val="Today at 12:30 PM">Today 12:30 PM</button>
               <button type="button" class="ai-chip-btn ai-inline-choice" data-val="Tomorrow at 10:00 AM">Tomorrow 10:00 AM</button>
-              <button type="button" class="ai-chip-btn ai-inline-choice" data-val="This Saturday at 11:30 AM">Saturday 11:30 AM</button>
+              <button type="button" class="ai-chip-btn ai-inline-choice" data-val="Friday at 11:30 AM">Friday 11:30 AM</button>
             </div>
           `;
         }
 
         if (session.state === 'BOOKING_TIME') {
+          if (lower.includes('saturday') || lower.includes('sunday') || lower.includes('weekend')) {
+            return `
+              <p>Our cafe is open for public walk-in dining <strong>Monday to Friday (7:30 AM – 3:00 PM)</strong>. On weekends, our space is reserved exclusively for private functions, cupping workshops, and event catering.</p>
+              <p>Would you like to pick a weekday table, or should I connect you with our events team for a private weekend hire?</p>
+              <div class="ai-quick-suggestions" style="margin-top:8px;">
+                <button type="button" class="ai-chip-btn ai-inline-choice" data-val="Tomorrow at 10:00 AM">Pick Weekday</button>
+                <button type="button" class="ai-chip-btn ai-inline-choice" data-val="Private Weekend Function">Private Event Hire</button>
+              </div>
+            `;
+          }
           session.booking.time = text;
           session.state = 'BOOKING_NAME';
           return `
-            <p>Reserved for <strong>${text}</strong>. What is your <strong>Full Name and Contact Number</strong> so our floor manager can hold the table?</p>
+            <p>Reserved for <strong>${text}</strong>. What is your <strong>Full Name and Contact Phone Number</strong> so our floor manager can hold your table?</p>
           `;
         }
 
@@ -1809,9 +1831,20 @@
 
         // 1. Single-Turn Compound Booking Parser (e.g. "table for 4 tomorrow at 1pm")
         if (lower.includes('book') || lower.includes('reserv') || lower.includes('table')) {
+          if (lower.includes('saturday') || lower.includes('sunday') || lower.includes('weekend')) {
+            return `
+              <p>Our cafe is open for public dining <strong>Monday to Friday (7:30 AM – 3:00 PM)</strong>. On weekends, our space is reserved exclusively for private functions and cupping workshops.</p>
+              <p>Would you like to reserve a table for a weekday (Mon–Fri), or inquire about booking our venue for a private weekend function?</p>
+              <div class="ai-quick-suggestions" style="margin-top:8px;">
+                <button type="button" class="ai-chip-btn ai-inline-choice" data-val="Reserve for tomorrow 11am">Reserve Weekday</button>
+                <button type="button" class="ai-chip-btn ai-inline-choice" data-val="Private Weekend Function">Private Event Hire</button>
+              </div>
+            `;
+          }
+
           const partyMatch = lower.match(/(\d+)\s*(people|person|guests|pax)?/);
           const timeMatch = lower.match(/(morning|afternoon|lunch|(\d{1,2}(:\d{2})?\s*(am|pm)))/);
-          const dayMatch = lower.match(/(today|tomorrow|saturday|sunday|monday|tuesday|wednesday|thursday|friday|weekend|tonight)/);
+          const dayMatch = lower.match(/(today|tomorrow|monday|tuesday|wednesday|thursday|friday)/);
 
           if (partyMatch && (timeMatch || dayMatch)) {
             const guests = partyMatch[1] + ' Guests';
@@ -1828,7 +1861,7 @@
           session.state = 'BOOKING_PARTY';
           return `
             <p><strong>Table Reservation Desk</strong></p>
-            <p>We would love to host you at our Ponsonby roastery! How many guests will be in your party?</p>
+            <p>We would love to host you at our Ponsonby cafe! How many guests will be in your party?</p>
             <div class="ai-quick-suggestions" style="margin-top:8px;">
               <button type="button" class="ai-chip-btn ai-inline-choice" data-val="1-2 Guests">1–2 Guests</button>
               <button type="button" class="ai-chip-btn ai-inline-choice" data-val="3-4 Guests">3–4 Guests</button>
@@ -1839,218 +1872,145 @@
 
         // 2. Recommendations & Barista Favorites
         if (lower.includes('recommend') || lower.includes('suggest') || lower.includes('what should i') || lower.includes('best drink') || lower.includes('best food') || lower.includes('popular') || lower.includes('favourite') || lower.includes('favorite')) {
-          if (lower.includes('lunch') || lower.includes('eat') || lower.includes('food') || lower.includes('toastie')) {
+          if (lower.includes('lunch') || lower.includes('eat') || lower.includes('food') || lower.includes('savour') || lower.includes('savory')) {
             return `
               <p><strong>Barista Kitchen Recommendations</strong></p>
-              <p>For lunch, our <strong>Slow-Cooked Beef Brisket Toastie ($16.00 NZD)</strong> with caramelised onions, pickled cornichons, and aged NZ cheddar is the top house pick.</p>
-              <p>For plant-based, our <strong>Avocado &amp; Charred Corn Sourdough Toastie ($14.50 NZD)</strong> with house chimichurri is exceptional. Pair with a batch brew or iced latte!</p>
+              <p>• <strong>Lunch Favourite:</strong> Our warm <strong>Cajun Chicken Wrap ($9.50 NZD)</strong> with spiced chicken, crisp greens, tomato, and garlic aioli in a soft tortilla.<br>
+              • <strong>Morning Classic:</strong> Flaky <strong>Ham &amp; Cheese Butter Croissant ($7.00 NZD)</strong> or our golden <strong>Bacon &amp; Cheese Quiche ($7.50 NZD)</strong>.</p>
             `;
           }
           return `
             <p><strong>Top House Recommendations</strong></p>
-            <p>• <strong>Coffee:</strong> Our <strong>Signature Sea Salt Cold Latte ($8.50 NZD)</strong> is Auckland-famous—velvety chilled cream milk, double espresso, and house sea salt foam.</p>
-            <p>• <strong>Filter:</strong> Single-Origin <strong>Ethiopian Guji Pour-Over ($6.00 NZD)</strong> with notes of jasmine, bergamot, and peach.</p>
-            <p>• <strong>Bakery:</strong> Gluten-free <strong>Almond Citrus Polenta Cake ($7.50 NZD)</strong> or warm <strong>Pork &amp; Fennel Savoury Roll ($9.00 NZD)</strong>.</p>
+            <p>• <strong>Signature Pour:</strong> Our Auckland-famous <strong>Sea Salt Coffee ($6.80 NZD)</strong>—iced double espresso over chilled milk, crowned with velvety savoury-sweet sea salt cream foam.<br>
+            • <strong>Layered Espresso:</strong> <strong>Dirty Latte ($6.50 NZD)</strong>—hot double ristretto pulled directly onto cold whole milk.<br>
+            • <strong>Sweet Treat:</strong> Our <strong>Zesty Lemon Tart ($6.50 NZD)</strong> or handmade <strong>French Macarons ($3.80 NZD)</strong>.</p>
           `;
         }
 
-        // 3. Specialty Teas, Decaf, Matcha, Chai
-        if (lower.includes('matcha') || lower.includes('chai') || lower.includes('chocolate') || lower.includes('decaf') || lower.includes('tea')) {
+        // 3. Ceramics & Boutique Store
+        if (lower.includes('ceramic') || lower.includes('pottery') || lower.includes('mug') || lower.includes('cup') || lower.includes('plate') || lower.includes('shop') || lower.includes('store') || lower.includes('homeware')) {
           return `
-            <p><strong>Specialty Teas &amp; Non-Coffee Brews</strong></p>
-            <p>• <strong>Ceremonial Grade Uji Matcha Latte ($7.00 NZD):</strong> Stone-ground Kyoto matcha whisked fresh with your choice of milk.<br>
-            • <strong>House Sticky Spiced Chai ($6.50 NZD):</strong> Whole spices steeped with NZ wildflower honey.<br>
-            • <strong>Zealong Organic NZ Teas ($6.50 NZD):</strong> Waikato-grown black, green, or oolong.<br>
-            • <strong>Swiss Water Decaf:</strong> 100% solvent-free decaf available on all espresso beverages!</p>
+            <p><strong>Artisan Spanish Ceramics Collection</strong></p>
+            <p>Along with our coffee and teas, Aura Roast features an exclusive boutique collection of hand-crafted ceramic mugs, latte cups, bowls, and serving plates imported directly from Spain ($22.00 – $48.00 NZD). Each piece is microwave &amp; dishwasher safe and displayed in-store to take home.</p>
           `;
         }
 
-        // 4. Milks & Plant-Based
-        if (lower.includes('milk') || lower.includes('oat') || lower.includes('almond') || lower.includes('soy') || lower.includes('dairy') || lower.includes('lactose')) {
+        // 4. Teas & Matcha
+        if (lower.includes('tea') || lower.includes('matcha') || lower.includes('zealong') || lower.includes('lupicia') || lower.includes('oolong')) {
           return `
-            <p><strong>Milk Selections &amp; Plant Options</strong></p>
-            <p>• <strong>Standard:</strong> Fresh organic whole milk or trim milk from pasture-fed New Zealand herds.<br>
-            • <strong>Plant Milks (+$0.80):</strong> Oatly Barista Oat, Pure Macadamia Milk, Almond Milk, and Bonsoy.</p>
+            <p><strong>Single-Estate Teas &amp; Japanese Imports</strong></p>
+            <p>• <strong>Zealong Sweet Amber ($6.00 NZD):</strong> 100% Certified Organic estate black tea from Waikato, NZ. Served in fine porcelain teaware.<br>
+            • <strong>Lupicia Momo Oolong ($6.00 NZD):</strong> White peach infused premium oolong with a refreshing floral finish.<br>
+            • <strong>Lupicia Rose Royal ($6.00 NZD):</strong> Black tea with strawberry and rose petal aromatics.<br>
+            • <strong>Stone-Ground Uji Matcha Latte ($5.80 Hot / $6.50 Iced):</strong> Authentic shaded green tea whisked with silky textured milk.</p>
           `;
         }
 
-        // 5. Gluten-Free / Celiac
-        if (lower.includes('gluten') || lower.includes('coeliac') || lower.includes('celiac') || lower.includes('gf')) {
-          return `
-            <p><strong>Gluten-Free Selections</strong></p>
-            <p>Yes, we have dedicated gluten-free options:</p>
-            <p>• <strong>Almond Citrus Polenta Cake ($7.50 NZD)</strong> — 100% GF recipe.<br>
-            • <strong>Artisanal French Macarons ($4.00 each)</strong> — naturally gluten-free.<br>
-            • <strong>Gluten-Free Bread Substitution:</strong> Available on request for all toasties!</p>
-          `;
-        }
-
-        // 6. Vegan / Plant Based
-        if (lower.includes('vegan') || lower.includes('plant based') || lower.includes('vegetarian')) {
-          return `
-            <p><strong>Vegan &amp; Plant-Based Options</strong></p>
-            <p>• <strong>Avocado &amp; Charred Corn Sourdough Toastie ($14.50 NZD):</strong> 100% vegan with house chimichurri and dairy-free crema.<br>
-            • <strong>Plant Milk Coffees:</strong> Oat, Macadamia, Almond, and Soy.<br>
-            • <strong>Chia Berry Breakfast Pots:</strong> Prepared daily with coconut yogurt.</p>
-          `;
-        }
-
-        // 7. Pricing Specifics
+        // 5. Pricing Specifics
         if (lower.includes('how much') || lower.includes('cost') || lower.includes('price')) {
-          if (lower.includes('flat white') || lower.includes('cappuccino') || lower.includes('latte')) {
-            return `<p>Our <strong>Artisan Flat White, Latte, and Cappuccino</strong> are <strong>$5.50 NZD</strong> (Regular) / $6.20 NZD (Large). Plant milks are +$0.80.</p>`;
+          if (lower.includes('flat white') || lower.includes('latte') || lower.includes('cappuccino') || lower.includes('white coffee')) {
+            return `<p>Our <strong>White Coffee (Flat White, Latte, Cappuccino)</strong> is <strong>$5.00 NZD</strong> (Hot) or $5.50 NZD (Iced). Plant milks are +50c.</p>`;
           }
           if (lower.includes('sea salt') || lower.includes('dirty latte')) {
-            return `<p>Our <strong>Signature Sea Salt Cold Latte</strong> is <strong>$8.50 NZD</strong>.</p>`;
+            return `<p>Our <strong>Sea Salt Coffee</strong> is <strong>$6.80 NZD</strong>, and our <strong>Dirty Latte</strong> is <strong>$6.50 NZD</strong>.</p>`;
           }
-          if (lower.includes('batch brew') || lower.includes('filter') || lower.includes('pour over')) {
-            return `<p>Our <strong>Single-Origin Pour-Over / Batch Brew</strong> is <strong>$6.00 NZD</strong>.</p>`;
+          if (lower.includes('black coffee') || lower.includes('espresso') || lower.includes('long black') || lower.includes('americano')) {
+            return `<p>Our <strong>Black Coffee (Single-origin espresso, long black, americano)</strong> is <strong>$4.50 NZD</strong>.</p>`;
           }
-          if (lower.includes('toastie') || lower.includes('food') || lower.includes('brisket')) {
-            return `<p>Our kitchen toasties range from <strong>$14.50 NZD</strong> (Vegan Avocado Corn) to <strong>$16.00 NZD</strong> (Beef Brisket), and fresh morning pastries start at $4.00 NZD.</p>`;
+          if (lower.includes('quiche') || lower.includes('croissant') || lower.includes('wrap') || lower.includes('food')) {
+            return `<p>Our cabinet savouries range from <strong>$7.00 NZD</strong> (Ham &amp; Cheese Croissant) to <strong>$7.50 NZD</strong> (Bacon &amp; Cheese Quiche) and <strong>$9.50 NZD</strong> (Cajun Chicken Wrap).</p>`;
           }
           return getStructuredResponse('coffee');
         }
 
-        // 8. Bean Origins & Roasting
-        if (lower.includes('bean') || lower.includes('origin') || lower.includes('roast') || lower.includes('ethiopia') || lower.includes('colombia')) {
+        // 6. Milk & Dietary
+        if (lower.includes('milk') || lower.includes('oat') || lower.includes('almond') || lower.includes('soy') || lower.includes('dairy') || lower.includes('lactose')) {
           return `
-            <p><strong>Bean Origins &amp; Roasting Philosophy</strong></p>
-            <p>We roast in small 5kg batches in Auckland:</p>
-            <p>• <strong>Ethiopia Guji:</strong> Natural processed, peach blossom &amp; bergamot notes.<br>
-            • <strong>Colombia Huila:</strong> Washed, milk chocolate &amp; red apple crispness.<br>
-            • <strong>Retail Beans:</strong> 250g bags ($18.00 NZD) available whole bean or freshly ground for your home brewing method.</p>
+            <p><strong>Milk Selections &amp; Plant Options</strong></p>
+            <p>• <strong>Dairy:</strong> Fresh organic whole milk and trim milk from pasture-fed New Zealand herds.<br>
+            • <strong>Plant Milks (+50c):</strong> Oatly Barista Oat, Pure Macadamia Milk, Almond Milk, and Bonsoy.</p>
           `;
         }
 
-        // 9. Takeaway & Sustainability
-        if (lower.includes('takeaway') || lower.includes('to go') || lower.includes('cup') || lower.includes('byo')) {
+        if (lower.includes('gluten') || lower.includes('coeliac') || lower.includes('celiac') || lower.includes('gf')) {
           return `
-            <p><strong>Takeaways &amp; Sustainability</strong></p>
-            <p>Yes, our entire espresso, tea, and cabinet menu is available to take away. If you bring your own reusable keep-cup, you receive <strong>50c off your beverage</strong>!</p>
+            <p><strong>Gluten-Free Options</strong></p>
+            <p>Our <strong>Artisanal French Macarons ($3.80 each, 2 for $7.00 NZD)</strong> are handmade with almond flour and naturally gluten-free in flavours like Pistachio, Raspberry, Dark Chocolate, and Salted Caramel.</p>
           `;
         }
 
-        // 10. Payment Methods
-        if (lower.includes('pay') || lower.includes('card') || lower.includes('cash') || lower.includes('eftpos') || lower.includes('apple pay')) {
-          return `
-            <p><strong>Payment Methods Accepted</strong></p>
-            <p>We accept contactless EFTPOS, Visa, Mastercard, American Express, Apple Pay, Google Pay, and cash with zero surcharge on standard debit cards.</p>
-          `;
-        }
-
-        // 11. Wi-Fi & Working
-        if (lower.includes('wifi') || lower.includes('internet') || lower.includes('study') || lower.includes('work') || lower.includes('laptop') || lower.includes('quiet') || lower.includes('power') || lower.includes('plug')) {
-          return getStructuredResponse('wifi');
-        }
-
-        // 12. Dogs & Outdoor Patio
-        if (lower.includes('dog') || lower.includes('pet') || lower.includes('puppy') || lower.includes('patio') || lower.includes('outside') || lower.includes('courtyard')) {
-          return `
-            <p><strong>Dog-Friendly Outdoor Patio</strong></p>
-            <p>Yes! Well-behaved dogs are warmly welcome on our sheltered, sunlit Ponsonby Road patio. We keep fresh water bowls and house-baked dog biscuits ready for all furry companions.</p>
-          `;
-        }
-
-        // 13. Parking & Directions
-        if (lower.includes('parking') || lower.includes('car') || lower.includes('drive') || lower.includes('where') || lower.includes('address') || lower.includes('direction') || lower.includes('bus') || lower.includes('map')) {
-          return getStructuredResponse('parking');
-        }
-
-        // 14. Hours & Open Status
+        // 7. Hours & Schedule
         if (lower.includes('hour') || lower.includes('time') || lower.includes('open') || lower.includes('close') || lower.includes('schedule') || lower.includes('today')) {
           return getStructuredResponse('hours');
         }
 
-        // 15. Catering & Private Functions
-        if (lower.includes('cater') || lower.includes('event') || lower.includes('function') || lower.includes('party') || lower.includes('private')) {
+        // 8. Location & Directions
+        if (lower.includes('parking') || lower.includes('where') || lower.includes('address') || lower.includes('direction') || lower.includes('bus') || lower.includes('location')) {
+          return getStructuredResponse('parking');
+        }
+
+        // 9. Remote Work & Wi-Fi
+        if (lower.includes('wifi') || lower.includes('internet') || lower.includes('work') || lower.includes('laptop') || lower.includes('study') || lower.includes('quiet')) {
+          return getStructuredResponse('wifi');
+        }
+
+        // 10. Private Events & Weekend Hire
+        if (lower.includes('cater') || lower.includes('event') || lower.includes('function') || lower.includes('party') || lower.includes('private') || lower.includes('weekend')) {
           return `
-            <p><strong>Private Events &amp; Catering</strong></p>
-            <p>We cater corporate breakfast toastie boxes and offer after-hours roastery hire for private functions, cupping sessions, and tasting workshops. Contact our events team at <strong>09 378 4920</strong> or email <em>hello@auraroast.co.nz</em>.</p>
+            <p><strong>Private Events &amp; Weekend Sanctuary Hire</strong></p>
+            <p>While our cafe is closed for public walk-in dining on weekends, our Ponsonby space is available for private event hire, corporate meetings, cupping masterclasses, and photography shoots. Call our team at <strong>09 378 4920</strong> or email <em>hello@auraroast.co.nz</em>.</p>
           `;
         }
 
-        // 16. Gift Cards
-        if (lower.includes('gift') || lower.includes('voucher') || lower.includes('present')) {
-          return `
-            <p><strong>Aura Roast Gift Vouchers</strong></p>
-            <p>Gift cards are available from $20 to $200 NZD both in-store at the counter and online. Valid for all brews, retail beans, and kitchen food for 12 months.</p>
-          `;
-        }
-
-        // 17. Jobs & Hiring
-        if (lower.includes('job') || lower.includes('hire') || lower.includes('hiring') || lower.includes('career') || lower.includes('work with you')) {
-          return `
-            <p><strong>Careers at Aura Roast</strong></p>
-            <p>We are always eager to connect with skilled baristas and kitchen talents passionate about specialty coffee. Send your CV and a brief introduction to <em>careers@auraroast.co.nz</em>.</p>
-          `;
-        }
-
-        // 18. Contact & Socials
-        if (lower.includes('contact') || lower.includes('phone') || lower.includes('call') || lower.includes('email') || lower.includes('instagram')) {
+        // 11. Contact Details
+        if (lower.includes('contact') || lower.includes('phone') || lower.includes('call') || lower.includes('instagram')) {
           return `
             <p><strong>Connect with Aura Roast</strong></p>
             <p>
               • <strong>Phone:</strong> <a href="tel:+6493784920" style="color:#BC654B; font-weight:700;">09 378 4920</a><br>
               • <strong>Instagram:</strong> <a href="https://www.instagram.com/auraroast.akl/" target="_blank" rel="noopener" style="color:#BC654B; font-weight:700;">@auraroast.akl</a><br>
-              • <strong>Email:</strong> <em>hello@auraroast.co.nz</em><br>
               • <strong>Address:</strong> 48 Ponsonby Road, Ponsonby, Auckland
             </p>
           `;
         }
 
-        // 19. Greetings & Kiwi Hospitality
-        if (lower.includes('hello') || lower.includes('hi') || lower.includes('hey') || lower.includes('kia ora') || lower.includes('morning') || lower.includes('afternoon') || lower.includes('sup')) {
+        // 12. Greetings & Kiwi Hospitality
+        if (lower.includes('hello') || lower.includes('hi') || lower.includes('hey') || lower.includes('kia ora') || lower.includes('morning')) {
           return `
             <p><strong>Kia ora! Great to connect with you.</strong></p>
-            <p>I am your barista assistant at Aura Roast on 48 Ponsonby Road. What would you like to explore? I can show you our single-origin coffees, morning bakery options, check our opening hours, or reserve a table for you.</p>
+            <p>I am your barista assistant at Aura Roast on Ponsonby Road. What would you like to explore? I can show you our specialty brews, fresh cabinet savouries, check our opening hours, or reserve a table for you.</p>
             <div class="ai-quick-suggestions">
               <button type="button" class="ai-chip-btn" data-query="hours">Check Hours</button>
               <button type="button" class="ai-chip-btn" data-query="book">Book a Table</button>
               <button type="button" class="ai-chip-btn" data-query="coffee">Coffee Menu</button>
+              <button type="button" class="ai-chip-btn" data-query="food">Cabinet Food</button>
             </div>
           `;
         }
 
-        // 20. Politeness / Thanks / Farewell
-        if (lower.includes('thank') || lower.includes('cheers') || lower.includes('awesome') || lower.includes('great') || lower.includes('perfect')) {
-          return `
-            <p>You are most welcome! We look forward to welcoming you at Aura Roast on Ponsonby Road. Let me know if you need anything else!</p>
-          `;
+        // 13. Politeness
+        if (lower.includes('thank') || lower.includes('cheers') || lower.includes('awesome') || lower.includes('great')) {
+          return `<p>You are most welcome! We look forward to welcoming you at Aura Roast on 48 Ponsonby Road. Let me know if you need anything else!</p>`;
         }
 
-        if (lower.includes('bye') || lower.includes('goodbye') || lower.includes('see you')) {
-          return `
-            <p>Have a wonderful day! See you soon at 48 Ponsonby Road for your next cup.</p>
-          `;
-        }
-
-        // 21. Broad Menu Fallback (Coffee or Food)
-        if (lower.includes('coffee') || lower.includes('drink') || lower.includes('latte') || lower.includes('espresso')) {
-          return getStructuredResponse('coffee');
-        }
-        if (lower.includes('food') || lower.includes('eat') || lower.includes('menu') || lower.includes('pastry') || lower.includes('breakfast')) {
-          return getStructuredResponse('food');
-        }
-
-        // 22. Intelligent Contextual Barista Fallback (Never sounds dumb)
+        // 14. Broad Fallback
         return `
-          <p>Thanks for asking! As Aura Roast's concierge, I specialize in helping you with:</p>
-          <p>• <strong>Coffee &amp; Teas:</strong> Sea salt lattes, Ethiopian single-origins, ceremonial matcha &amp; plant milks<br>
-          • <strong>Cabinet Food:</strong> Sourdough toasties, GF polenta cakes, savoury rolls<br>
-          • <strong>Visiting:</strong> Operating hours, Wi-Fi for work, street parking &amp; dog patio<br>
-          • <strong>Reservations:</strong> Booking a table for your visit</p>
+          <p>Thanks for asking! As Aura Roast's digital concierge, I specialize in helping you with:</p>
+          <p>• <strong>Brews &amp; Teas:</strong> Sea salt iced coffee, dirty latte, flat whites, Uji matcha &amp; Zealong teas<br>
+          • <strong>Cabinet Savouries:</strong> Cajun chicken wraps, bacon &amp; cheese quiche, croissants &amp; macarons<br>
+          • <strong>Boutique Store:</strong> Handcrafted Spanish imported ceramics ($22 – $48)<br>
+          • <strong>Visiting:</strong> Hours (Mon–Fri 7:30am–3:00pm), street parking &amp; fiber Wi-Fi<br>
+          • <strong>Reservations:</strong> Booking a weekday table or private event</p>
           <div class="ai-quick-suggestions" style="margin-top:8px;">
             <button type="button" class="ai-chip-btn" data-query="hours">Today's Hours</button>
             <button type="button" class="ai-chip-btn" data-query="book">Reserve a Table</button>
             <button type="button" class="ai-chip-btn" data-query="coffee">Coffee Menu</button>
-            <button type="button" class="ai-chip-btn" data-query="food">Food Menu</button>
+            <button type="button" class="ai-chip-btn" data-query="food">Food &amp; Savouries</button>
           </div>
           <p style="margin-top:8px; font-size:0.82rem; color:#5D5348;">Or call our barista team directly at <strong>09 378 4920</strong>.</p>
         `;
       };
 
-      // Bind Chip click handlers
       const bindChips = () => {
         document.querySelectorAll('.ai-chip-btn').forEach(btn => {
           if (btn.dataset.bound) return;
