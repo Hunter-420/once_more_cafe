@@ -64,7 +64,7 @@ once_more_cafe/
 | **Coordinates** | Latitude `-36.8576`, Longitude `174.7468` |
 | **Plus Code** | `4QP6+JH Auckland` |
 | **Phone** | `09 378 4920` (International: `+64 9 378 4920`) |
-| **Instagram** | [@auraroast.akl](https://www.instagram.com/auraroast.akl/) |
+| **Instagram** | [@nischal_khanal1](https://www.instagram.com/nischal_khanal1/) |
 | **Google Maps Link** | [maps.app.goo.gl/sYgYipkAPVMcbTCM9](https://maps.app.goo.gl/sYgYipkAPVMcbTCM9) |
 | **Google Place ID** | `ChIJDxiuQlhHDW0RI8mLwDLveNA` |
 | **Google CID** | `15022067756910627107` |
