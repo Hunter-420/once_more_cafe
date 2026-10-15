@@ -1287,20 +1287,24 @@
     });
   </script>
 
+  
   <!-- ==========================================================================
-       AI Barista Customer Concierge Widget
+       Aura AI Smart Barista Concierge 2.0 (Vector Icons & Natural Intelligence)
        ========================================================================== -->
   <div class="ai-concierge-container" id="aiConciergeContainer">
     <!-- Floating Trigger Button -->
     <button class="ai-concierge-toggle" id="aiConciergeToggle" aria-label="Open Aura AI Barista Concierge">
-      <span class="ai-sparkle-badge">AI Concierge</span>
-      <svg class="chat-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <span class="ai-sparkle-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+        AI Concierge
+      </span>
+      <svg class="chat-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-        <circle cx="9" cy="10" r="1" fill="currentColor"></circle>
-        <circle cx="12" cy="10" r="1" fill="currentColor"></circle>
-        <circle cx="15" cy="10" r="1" fill="currentColor"></circle>
+        <circle cx="9" cy="10" r="1.2" fill="currentColor"></circle>
+        <circle cx="12" cy="10" r="1.2" fill="currentColor"></circle>
+        <circle cx="15" cy="10" r="1.2" fill="currentColor"></circle>
       </svg>
-      <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg class="close-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <line x1="18" y1="6" x2="6" y2="18"></line>
         <line x1="6" y1="6" x2="18" y2="18"></line>
       </svg>
@@ -1308,40 +1312,89 @@
 
     <!-- Floating Chat Window -->
     <div class="ai-chat-window" id="aiChatWindow" role="dialog" aria-modal="true" aria-labelledby="aiChatTitle">
+      <!-- Header -->
       <div class="ai-chat-header">
         <div class="ai-header-profile">
           <div class="ai-avatar-wrap">
-            <span class="ai-avatar-emoji">☕</span>
-            <span class="ai-online-status" title="Barista Concierge Online"></span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+            <span class="ai-online-status" title="Barista Concierge Active"></span>
           </div>
           <div class="ai-header-info">
-            <h3 id="aiChatTitle">Aura AI Concierge</h3>
-            <span class="ai-header-subtitle">Artisan Barista Assistant · 48 Ponsonby Rd</span>
+            <h3 id="aiChatTitle">Aura AI Concierge <span class="ai-badge-pill">Smart Barista</span></h3>
+            <span class="ai-header-subtitle">48 Ponsonby Rd · Live Assistant</span>
           </div>
         </div>
-        <button class="ai-header-close" id="aiChatClose" aria-label="Close Assistant">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </button>
+        <div class="ai-header-actions">
+          <button type="button" class="ai-action-btn" id="aiMuteBtn" title="Toggle Sound Feedback" aria-label="Toggle Sound">
+            <svg id="aiAudioIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+          </button>
+          <button type="button" class="ai-action-btn" id="aiResetBtn" title="Reset Conversation" aria-label="Reset Conversation">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 4 23 10 17 10"></polyline>
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+            </svg>
+          </button>
+          <button type="button" class="ai-action-btn" id="aiChatClose" title="Minimize Chat" aria-label="Minimize Chat">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
       </div>
 
+      <!-- Messages Body -->
       <div class="ai-chat-body" id="aiChatBody">
         <div class="ai-msg ai-msg-bot">
           <div class="ai-msg-bubble">
-            <p><strong>Kia ora! 👋 Welcome to Aura Roast.</strong></p>
-            <p>I am your digital barista concierge. Ask me anything about our single-origin roasts, daily cabinet bakery, opening hours, or table bookings!</p>
+            <p><strong>Kia ora, welcome to Aura Roast.</strong></p>
+            <p>I am your digital barista assistant at 48 Ponsonby Road. How may I help you today? You can ask about our single-origin coffees, fresh daily cabinet food, opening hours, or reserve a table!</p>
           </div>
+          <span class="ai-msg-time" id="aiInitialTime">Just now</span>
         </div>
+
+        <!-- Quick Action Chips (With Vector SVG Icons, Zero Emojis) -->
         <div class="ai-quick-suggestions" id="aiQuickSuggestions">
-          <button type="button" class="ai-chip-btn" data-query="hours">🕒 Opening Hours &amp; Location</button>
-          <button type="button" class="ai-chip-btn" data-query="coffee">☕ Signature Brews &amp; Coffee</button>
-          <button type="button" class="ai-chip-btn" data-query="food">🥐 Dietary &amp; Food Options</button>
-          <button type="button" class="ai-chip-btn" data-query="reserve">📅 Book a Table</button>
+          <button type="button" class="ai-chip-btn" data-query="hours">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Hours &amp; Location
+          </button>
+          <button type="button" class="ai-chip-btn" data-query="coffee">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+            Specialty Brews
+          </button>
+          <button type="button" class="ai-chip-btn" data-query="food">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2v20M2 2v20M14 2v6a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V2"></path></svg>
+            Dietary &amp; Food
+          </button>
+          <button type="button" class="ai-chip-btn" data-query="reserve">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            Book a Table
+          </button>
+          <button type="button" class="ai-chip-btn" data-query="wifi">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+            Wi-Fi &amp; Work
+          </button>
+          <button type="button" class="ai-chip-btn" data-query="parking">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Directions &amp; Parking
+          </button>
         </div>
       </div>
 
+      <!-- Input Form -->
       <form class="ai-chat-form" id="aiChatForm">
-        <input type="text" id="aiChatInput" class="ai-chat-input" placeholder="Ask a question..." autocomplete="off" aria-label="Ask Aura AI Concierge">
-        <button type="submit" class="ai-chat-send" aria-label="Send Message">
+        <input type="text" id="aiChatInput" class="ai-chat-input" placeholder="Ask about brews, food, hours, or reservations..." autocomplete="off" aria-label="Ask Aura AI Concierge">
+        <button type="submit" class="ai-chat-send" id="aiChatSendBtn" aria-label="Send Message">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="22" y1="2" x2="11" y2="13"></line>
             <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
@@ -1351,45 +1404,143 @@
     </div>
   </div>
 
+  <!-- Smart Conversational Engine Script -->
   <script>
-    // Aura AI Concierge Logic
     document.addEventListener('DOMContentLoaded', () => {
       const container = document.getElementById('aiConciergeContainer');
       const toggleBtn = document.getElementById('aiConciergeToggle');
       const closeBtn = document.getElementById('aiChatClose');
+      const resetBtn = document.getElementById('aiResetBtn');
+      const muteBtn = document.getElementById('aiMuteBtn');
+      const audioIcon = document.getElementById('aiAudioIcon');
       const chatBody = document.getElementById('aiChatBody');
       const chatForm = document.getElementById('aiChatForm');
       const chatInput = document.getElementById('aiChatInput');
       const chipBtns = document.querySelectorAll('.ai-chip-btn');
+      const initialTime = document.getElementById('aiInitialTime');
 
       if (!container || !toggleBtn) return;
+
+      // Audio feedback via Web Audio API (No external sound files required)
+      let soundEnabled = true;
+      let audioCtx = null;
+
+      const playChime = (freq = 780, type = 'sine') => {
+        if (!soundEnabled) return;
+        try {
+          if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+          if (audioCtx.state === 'suspended') audioCtx.resume();
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = type;
+          osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(freq * 1.25, audioCtx.currentTime + 0.08);
+          gain.gain.setValueAtTime(0.04, audioCtx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.1);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start();
+          osc.stop(audioCtx.currentTime + 0.1);
+        } catch(e) {}
+      };
+
+      if (muteBtn) {
+        muteBtn.addEventListener('click', () => {
+          soundEnabled = !soundEnabled;
+          audioIcon.innerHTML = soundEnabled 
+            ? '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>'
+            : '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>';
+          muteBtn.title = soundEnabled ? 'Mute audio' : 'Unmute audio';
+        });
+      }
+
+      // Format current timestamp
+      const getFormattedTime = () => {
+        const d = new Date();
+        let hours = d.getHours();
+        const mins = d.getMinutes().toString().padStart(2, '0');
+        const ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12;
+        return `${hours}:${mins} ${ampm}`;
+      };
+
+      if (initialTime) initialTime.textContent = getFormattedTime();
 
       const toggleChat = () => {
         container.classList.toggle('active');
         if (container.classList.contains('active')) {
-          chatInput.focus();
+          playChime(640);
+          setTimeout(() => chatInput.focus(), 250);
         }
       };
 
       toggleBtn.addEventListener('click', toggleChat);
       if (closeBtn) closeBtn.addEventListener('click', toggleChat);
 
-      const knowledgeBase = {
-        hours: "Our operating hours at <strong>48 Ponsonby Road</strong>:<br>• <strong>Mon – Fri:</strong> 7:30 AM – 3:00 PM<br>• <strong>Sat – Sun:</strong> 8:00 AM – 3:30 PM<br><em>Espresso bar & fresh cabinet food ready daily from 7:30 AM!</em>",
-        coffee: "Our roastery craft specialties include:<br>• <strong>Signature Sea Salt Iced Cream Latte</strong> ($8.50) — Our #1 house favourite!<br>• <strong>Single-Origin Ethiopian Guji Batch Brew</strong> ($6.00)<br>• <strong>Artisan Flat White & Espresso</strong> with Oat/Macadamia milk options<br>• <strong>Zealong Organic NZ Loose-Leaf Teas</strong> ($6.50)",
-        food: "Baked fresh every morning in our Ponsonby kitchen:<br>• <strong>Gluten-Free:</strong> Almond Citrus Polenta Cake ($7.50)<br>• <strong>Vegan:</strong> Avocado & Charred Corn Sourdough Toastie ($14.50)<br>• <strong>Savouries:</strong> Spinach & Feta Danish, Free-range Pork & Herb Rolls<br>• <strong>Sweet:</strong> Artisanal French Macarons & Cinnamon Brioche",
-        reserve: "We would love to host you! You can reserve a table by calling us at <strong>09 378 4920</strong> or reply right here with your <strong>Name, Party Size, and Desired Date & Time</strong>, and I will confirm your table!"
+      // Multi-turn Conversational Memory & Booking State
+      const session = {
+        state: 'NORMAL', // 'NORMAL' | 'BOOKING_PARTY' | 'BOOKING_TIME' | 'BOOKING_NAME'
+        booking: {
+          guests: '',
+          date: '',
+          time: '',
+          name: ''
+        }
       };
+
+      // Reset function
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          session.state = 'NORMAL';
+          session.booking = { guests: '', date: '', time: '', name: '' };
+          chatBody.innerHTML = `
+            <div class="ai-msg ai-msg-bot">
+              <div class="ai-msg-bubble">
+                <p><strong>Conversation refreshed.</strong></p>
+                <p>How can I assist you at Aura Roast today? Feel free to ask about our single-origin coffees, cabinet food, hours, or table reservations.</p>
+              </div>
+              <span class="ai-msg-time">${getFormattedTime()}</span>
+            </div>
+            <div class="ai-quick-suggestions" id="aiQuickSuggestions">
+              <button type="button" class="ai-chip-btn" data-query="hours">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Hours &amp; Location
+              </button>
+              <button type="button" class="ai-chip-btn" data-query="coffee">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                Specialty Brews
+              </button>
+              <button type="button" class="ai-chip-btn" data-query="food">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2v20M2 2v20M14 2v6a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V2"></path></svg>
+                Dietary &amp; Food
+              </button>
+              <button type="button" class="ai-chip-btn" data-query="reserve">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                Book a Table
+              </button>
+            </div>
+          `;
+          bindChips();
+          playChime(500);
+        });
+      }
 
       const appendMessage = (sender, htmlContent) => {
         const msgDiv = document.createElement('div');
-        msgDiv.className = 'ai-msg ai-msg-' + sender;
+        msgDiv.className = `ai-msg ai-msg-${sender}`;
         const bubble = document.createElement('div');
         bubble.className = 'ai-msg-bubble';
         bubble.innerHTML = htmlContent;
         msgDiv.appendChild(bubble);
+
+        const timeSpan = document.createElement('span');
+        timeSpan.className = 'ai-msg-time';
+        timeSpan.textContent = getFormattedTime();
+        msgDiv.appendChild(timeSpan);
+
         chatBody.appendChild(msgDiv);
         chatBody.scrollTop = chatBody.scrollHeight;
+        if (sender === 'bot') playChime(760);
       };
 
       const showTypingIndicator = () => {
@@ -1401,56 +1552,343 @@
         return typingDiv;
       };
 
-      const processResponse = (userText) => {
-        const text = userText.toLowerCase();
-        let reply = '';
-
-        if (text.includes('hour') || text.includes('time') || text.includes('open') || text.includes('close')) {
-          reply = knowledgeBase.hours;
-        } else if (text.includes('coffee') || text.includes('drink') || text.includes('latte') || text.includes('roast') || text.includes('brew') || text.includes('tea')) {
-          reply = knowledgeBase.coffee;
-        } else if (text.includes('food') || text.includes('vegan') || text.includes('gluten') || text.includes('gf') || text.includes('eat') || text.includes('pastry') || text.includes('menu')) {
-          reply = knowledgeBase.food;
-        } else if (text.includes('book') || text.includes('reserv') || text.includes('table')) {
-          reply = knowledgeBase.reserve;
-        } else if (text.includes('wifi') || text.includes('study') || text.includes('work') || text.includes('laptop')) {
-          reply = "Yes! We provide complimentary ultra-fast fiber Wi-Fi and quiet booth seating with power points along our Ponsonby Rd windows. Perfect for remote work and quiet reading!";
-        } else if (text.includes('dog') || text.includes('pet')) {
-          reply = "We love dogs! 🐾 Dogs are warmly welcome on our sheltered, sunlit outdoor patio at 48 Ponsonby Road. Complimentary fresh water bowls and house treats provided!";
-        } else if (text.includes('parking') || text.includes('car') || text.includes('drive')) {
-          reply = "Convenient 60-min and 120-min street parking is available directly along Ponsonby Road and adjacent Franklin Road, just a 30-second stroll to our cafe.";
-        } else if (/\d/.test(text) && (text.includes('people') || text.includes('table') || text.includes('pm') || text.includes('am') || text.includes('tomorrow') || text.includes('person') || text.includes('pax'))) {
-          reply = "✅ <strong>Table Booking Saved!</strong><br>We have recorded your reservation request for <strong>48 Ponsonby Road</strong>. Our team will have your table ready with a 15-minute grace window. Need any changes? Feel free to call us at <strong>09 378 4920</strong>!";
+      // Check current Auckland operating status
+      const getLiveStatus = () => {
+        const now = new Date();
+        const day = now.getDay(); // 0 is Sun, 6 is Sat
+        const hours = now.getHours() + (now.getMinutes() / 60);
+        let isOpen = false;
+        if (day >= 1 && day <= 5) {
+          isOpen = hours >= 7.5 && hours <= 15.0;
         } else {
-          reply = "Thanks for your message! As your Aura Roast digital concierge, I'm here to help with our single-origin coffees, food menu, hours, or table bookings at 48 Ponsonby Road. You can also reach our team directly at <strong>09 378 4920</strong> or <em>hello@auraroast.co.nz</em>!";
+          isOpen = hours >= 8.0 && hours <= 15.5;
         }
-
-        const typingEl = showTypingIndicator();
-        setTimeout(() => {
-          typingEl.remove();
-          appendMessage('bot', reply);
-        }, 650);
+        return isOpen 
+          ? '<span class="ai-live-badge">Open Now · Closes at 3:00 PM</span>'
+          : '<span class="ai-live-badge" style="background:#FEE2E2; color:#991B1B;">Currently Closed · Opens 7:30 AM</span>';
       };
 
-      chipBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const query = btn.getAttribute('data-query');
-          appendMessage('user', btn.textContent.trim());
-          const typingEl = showTypingIndicator();
-          setTimeout(() => {
-            typingEl.remove();
-            appendMessage('bot', knowledgeBase[query] || knowledgeBase.hours);
-          }, 500);
-        });
-      });
+      // Structured Responses Generator
+      const getStructuredResponse = (topic) => {
+        if (topic === 'hours') {
+          return `
+            <p><strong>Aura Roast Schedule &amp; Location</strong></p>
+            ${getLiveStatus()}
+            <div class="ai-rich-card">
+              <div class="ai-card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Operating Hours
+              </div>
+              <div class="ai-schedule-row"><span class="ai-schedule-day">Monday – Friday</span><span>7:30 AM – 3:00 PM</span></div>
+              <div class="ai-schedule-row"><span class="ai-schedule-day">Saturday – Sunday</span><span>8:00 AM – 3:30 PM</span></div>
+            </div>
+            <p style="margin-top:6px; font-size:0.84rem; color:#5D5348;">Location: <strong>48 Ponsonby Road, Ponsonby</strong>. Fresh espresso bar and bakery cabinet ready from opening.</p>
+          `;
+        }
 
+        if (topic === 'coffee') {
+          return `
+            <p><strong>Our Roastery Coffee Menu &amp; Specialties</strong></p>
+            <div class="ai-rich-card">
+              <div class="ai-card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path></svg>
+                Craft Coffee Selection
+              </div>
+              <div class="ai-product-grid">
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Signature Sea Salt Cold Latte</span> <span class="ai-tag-pill">House #1</span></div>
+                  <span class="ai-product-price">$8.50 NZD</span>
+                </div>
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Single-Origin Ethiopian Guji Pour-Over</span> <span class="ai-tag-pill">Floral</span></div>
+                  <span class="ai-product-price">$6.00 NZD</span>
+                </div>
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Artisan Flat White / Cappuccino</span> <span class="ai-tag-pill">Velvet</span></div>
+                  <span class="ai-product-price">$5.50 NZD</span>
+                </div>
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Zealong Organic NZ Estate Tea</span> <span class="ai-tag-pill">Organic</span></div>
+                  <span class="ai-product-price">$6.50 NZD</span>
+                </div>
+              </div>
+            </div>
+            <p style="margin-top:6px; font-size:0.84rem; color:#5D5348;">Alternative milks available: Oatly Oat, Almond, Macadamia, Soy (+$0.80).</p>
+          `;
+        }
+
+        if (topic === 'food') {
+          return `
+            <p><strong>Artisan Bakery Cabinet &amp; Dietary Options</strong></p>
+            <div class="ai-rich-card">
+              <div class="ai-card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2v20M2 2v20M14 2v6a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V2"></path></svg>
+                Fresh Morning Kitchen
+              </div>
+              <div class="ai-product-grid">
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Avocado &amp; Charred Corn Toastie</span> <span class="ai-tag-pill">Vegan</span></div>
+                  <span class="ai-product-price">$14.50 NZD</span>
+                </div>
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Almond Citrus Polenta Cake</span> <span class="ai-tag-pill">Gluten-Free</span></div>
+                  <span class="ai-product-price">$7.50 NZD</span>
+                </div>
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Free-Range Pork &amp; Fennel Roll</span> <span class="ai-tag-pill">Warm</span></div>
+                  <span class="ai-product-price">$9.00 NZD</span>
+                </div>
+                <div class="ai-product-item">
+                  <div><span class="ai-product-name">Artisan French Macarons (Pair)</span> <span class="ai-tag-pill">GF</span></div>
+                  <span class="ai-product-price">$8.00 NZD</span>
+                </div>
+              </div>
+            </div>
+            <p style="margin-top:6px; font-size:0.84rem; color:#5D5348;">All items baked fresh in Ponsonby every morning at 6:30 AM.</p>
+          `;
+        }
+
+        if (topic === 'wifi') {
+          return `
+            <p><strong>Remote Work &amp; Reading Sanctuary</strong></p>
+            <div class="ai-rich-card">
+              <div class="ai-card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+                Amenities for Digital Creators
+              </div>
+              <p style="font-size:0.83rem; color:#3F372F; margin:4px 0;">
+                • <strong>Ultra-Fast Fiber Wi-Fi:</strong> Free high-speed connection for guests.<br>
+                • <strong>Power Outlets:</strong> Dedicated wall plugs along our Ponsonby Rd window bar.<br>
+                • <strong>Atmosphere:</strong> Quiet acoustic ambiance, lo-fi warm jazz, natural wood tables.
+              </p>
+            </div>
+          `;
+        }
+
+        if (topic === 'parking') {
+          return `
+            <p><strong>Directions &amp; Parking Guide</strong></p>
+            <div class="ai-rich-card">
+              <div class="ai-card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Arriving at 48 Ponsonby Road
+              </div>
+              <p style="font-size:0.83rem; color:#3F372F; margin:4px 0;">
+                • <strong>Street Parking:</strong> 60-min and 120-min parking bays directly on Ponsonby Road and adjacent Franklin Road.<br>
+                • <strong>Public Transit:</strong> The Auckland InnerLink bus stops less than 40 metres away.<br>
+                • <strong>Outdoor Patio:</strong> Dog-friendly sheltered seating available in front!
+              </p>
+            </div>
+          `;
+        }
+
+        return '';
+      };
+
+      // Natural Language AI Processing
+      const processNaturalInput = (input) => {
+        const text = input.trim();
+        const lower = text.toLowerCase();
+
+        // Check if user is inside booking flow
+        if (session.state === 'BOOKING_PARTY') {
+          session.booking.guests = text;
+          session.state = 'BOOKING_TIME';
+          return `
+            <p>Noted for <strong>${text}</strong>. What date and preferred time would you like to reserve?</p>
+            <div class="ai-quick-suggestions" style="margin-top:8px;">
+              <button type="button" class="ai-chip-btn ai-inline-choice" data-val="Today at 12:30 PM">Today 12:30 PM</button>
+              <button type="button" class="ai-chip-btn ai-inline-choice" data-val="Tomorrow at 10:00 AM">Tomorrow 10:00 AM</button>
+              <button type="button" class="ai-chip-btn ai-inline-choice" data-val="This Saturday at 11:30 AM">Saturday 11:30 AM</button>
+            </div>
+          `;
+        }
+
+        if (session.state === 'BOOKING_TIME') {
+          session.booking.time = text;
+          session.state = 'BOOKING_NAME';
+          return `
+            <p>Reserved for <strong>${text}</strong>. Last step: what is your <strong>Full Name and Phone Number</strong> so we can confirm the table?</p>
+          `;
+        }
+
+        if (session.state === 'BOOKING_NAME') {
+          session.booking.name = text;
+          session.state = 'NORMAL';
+          const ref = 'AUR-' + Math.floor(1000 + Math.random() * 9000);
+          return `
+            <p><strong>Table Reservation Confirmed!</strong></p>
+            <div class="ai-booking-pass">
+              <div class="ai-pass-header">
+                <span style="font-weight:700; color:#FFFFFF; font-size:0.85rem;">Aura Roast Ponsonby</span>
+                <span class="ai-pass-ref">#${ref}</span>
+              </div>
+              <div class="ai-pass-grid">
+                <div><span class="ai-pass-label">Guest Name</span><div class="ai-pass-val">${session.booking.name}</div></div>
+                <div><span class="ai-pass-label">Party Size</span><div class="ai-pass-val">${session.booking.guests || '2 Guests'}</div></div>
+                <div><span class="ai-pass-label">Date &amp; Time</span><div class="ai-pass-val">${session.booking.time || 'Upcoming'}</div></div>
+                <div><span class="ai-pass-label">Location</span><div class="ai-pass-val">48 Ponsonby Rd</div></div>
+              </div>
+            </div>
+            <p style="font-size:0.82rem; color:#5D5348; margin-top:8px;">Your table is held with a 15-minute grace period. Need to adjust? Call us directly at <strong>09 378 4920</strong>.</p>
+          `;
+        }
+
+        // Direct Booking Trigger Detection
+        if (lower.includes('book') || lower.includes('reserv') || lower.includes('table')) {
+          // Check if party, date, or time were provided in one prompt (e.g. "table for 3 tomorrow at 11am")
+          const partyMatch = lower.match(/(\d+)\s*(people|person|guests|pax)?/);
+          const timeMatch = lower.match(/(morning|afternoon|lunch|(\d{1,2}(:\d{2})?\s*(am|pm)))/);
+          const dayMatch = lower.match(/(today|tomorrow|saturday|sunday|monday|friday|weekend)/);
+
+          if (partyMatch && (timeMatch || dayMatch)) {
+            const guests = partyMatch[1] + ' Guests';
+            const timeStr = (dayMatch ? dayMatch[0] : '') + (timeMatch ? ' at ' + timeMatch[0] : '');
+            session.booking.guests = guests;
+            session.booking.time = timeStr;
+            session.state = 'BOOKING_NAME';
+            return `
+              <p>I have got you down for <strong>${guests}</strong> on <strong>${timeStr}</strong> at 48 Ponsonby Road.</p>
+              <p>What is your <strong>Full Name and Contact Number</strong> to finalize this reservation pass?</p>
+            `;
+          }
+
+          session.state = 'BOOKING_PARTY';
+          return `
+            <p><strong>Table Reservation Desk</strong></p>
+            <p>We would love to host you at our Ponsonby cafe! How many guests will be in your party?</p>
+            <div class="ai-quick-suggestions" style="margin-top:8px;">
+              <button type="button" class="ai-chip-btn ai-inline-choice" data-val="1-2 Guests">1–2 Guests</button>
+              <button type="button" class="ai-chip-btn ai-inline-choice" data-val="3-4 Guests">3–4 Guests</button>
+              <button type="button" class="ai-chip-btn ai-inline-choice" data-val="5+ Group Table">5+ Group Table</button>
+            </div>
+          `;
+        }
+
+        // Hours & Location Intent
+        if (lower.includes('hour') || lower.includes('time') || lower.includes('open') || lower.includes('close') || lower.includes('schedule')) {
+          return getStructuredResponse('hours');
+        }
+
+        // Coffee / Drinks / Beans Intent
+        if (lower.includes('coffee') || lower.includes('latte') || lower.includes('espresso') || lower.includes('drink') || lower.includes('tea') || lower.includes('brew') || lower.includes('roast') || lower.includes('bean') || lower.includes('price')) {
+          if (lower.includes('sea salt') || lower.includes('dirty latte') || lower.includes('special')) {
+            return `
+              <p><strong>Signature Sea Salt Cold Latte ($8.50 NZD)</strong></p>
+              <p>Our signature beverage is crafted with double-pulled espresso poured over cold, velvety cream milk, topped with house-whipped sea salt foam. A balanced harmony of sweet, savoury, and rich espresso notes.</p>
+            `;
+          }
+          return getStructuredResponse('coffee');
+        }
+
+        // Food & Dietary Intent
+        if (lower.includes('food') || lower.includes('eat') || lower.includes('vegan') || lower.includes('gluten') || lower.includes('gf') || lower.includes('pastry') || lower.includes('toast') || lower.includes('cake') || lower.includes('allergy') || lower.includes('diet')) {
+          return getStructuredResponse('food');
+        }
+
+        // Wi-Fi / Laptop Intent
+        if (lower.includes('wifi') || lower.includes('internet') || lower.includes('study') || lower.includes('work') || lower.includes('laptop') || lower.includes('quiet') || lower.includes('plug')) {
+          return getStructuredResponse('wifi');
+        }
+
+        // Dogs / Patio Intent
+        if (lower.includes('dog') || lower.includes('pet') || lower.includes('puppy') || lower.includes('patio') || lower.includes('courtyard') || lower.includes('outside')) {
+          return `
+            <p><strong>Dog-Friendly Outdoor Patio</strong></p>
+            <p>Yes, dogs are warmly welcome on our covered, sunny Ponsonby Road patio. We keep fresh water bowls and house-baked dog biscuits available for all four-legged companions!</p>
+          `;
+        }
+
+        // Parking & Location Intent
+        if (lower.includes('parking') || lower.includes('car') || lower.includes('drive') || lower.includes('where') || lower.includes('address') || lower.includes('direction') || lower.includes('location')) {
+          return getStructuredResponse('parking');
+        }
+
+        // Greeting Intent
+        if (lower.includes('hello') || lower.includes('hi') || lower.includes('hey') || lower.includes('kia ora') || lower.includes('good morning') || lower.includes('good afternoon')) {
+          return `
+            <p><strong>Kia ora! Great to chat with you.</strong></p>
+            <p>I am your smart concierge for Aura Roast at 48 Ponsonby Road. What would you like to explore? I can show you our single-origin coffees, morning bakery options, check our opening hours, or reserve a table for you.</p>
+          `;
+        }
+
+        // Contact Intent
+        if (lower.includes('contact') || lower.includes('phone') || lower.includes('call') || lower.includes('email') || lower.includes('instagram')) {
+          return `
+            <p><strong>Connect with Aura Roast</strong></p>
+            <p>
+              • <strong>Phone:</strong> <a href="tel:+6493784920" style="color:#BC654B; font-weight:700;">09 378 4920</a><br>
+              • <strong>Instagram:</strong> <a href="https://www.instagram.com/auraroast.akl/" target="_blank" rel="noopener" style="color:#BC654B; font-weight:700;">@auraroast.akl</a><br>
+              • <strong>Email:</strong> <em>hello@auraroast.co.nz</em><br>
+              • <strong>Address:</strong> 48 Ponsonby Road, Ponsonby, Auckland
+            </p>
+          `;
+        }
+
+        // Smart Conversational Fallback
+        return `
+          <p>Thank you for asking! As the Aura Roast barista concierge, I can help you with:</p>
+          <p>• Specialty coffee, pour-overs &amp; pricing<br>• Daily cabinet food &amp; gluten-free/vegan options<br>• Operating hours at 48 Ponsonby Road<br>• Reserving a table for your group</p>
+          <p style="margin-top:6px; font-size:0.83rem; color:#5D5348;">You can also call our barista counter anytime at <strong>09 378 4920</strong>!</p>
+        `;
+      };
+
+      // Bind Chip click handlers (including dynamically added choices)
+      const bindChips = () => {
+        document.querySelectorAll('.ai-chip-btn').forEach(btn => {
+          if (btn.dataset.bound) return;
+          btn.dataset.bound = 'true';
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const query = btn.getAttribute('data-query');
+            const inlineVal = btn.getAttribute('data-val');
+            const userText = inlineVal || btn.textContent.trim();
+
+            appendMessage('user', userText);
+            const typing = showTypingIndicator();
+
+            setTimeout(() => {
+              typing.remove();
+              if (query && !inlineVal) {
+                if (query === 'reserve') {
+                  session.state = 'BOOKING_PARTY';
+                  appendMessage('bot', `
+                    <p><strong>Table Reservation Desk</strong></p>
+                    <p>We would love to host you at 48 Ponsonby Road! How many guests will be in your party?</p>
+                    <div class="ai-quick-suggestions" style="margin-top:8px;">
+                      <button type="button" class="ai-chip-btn ai-inline-choice" data-val="1-2 Guests">1–2 Guests</button>
+                      <button type="button" class="ai-chip-btn ai-inline-choice" data-val="3-4 Guests">3–4 Guests</button>
+                      <button type="button" class="ai-chip-btn ai-inline-choice" data-val="5+ Group Table">5+ Group Table</button>
+                    </div>
+                  `);
+                  bindChips();
+                } else {
+                  appendMessage('bot', getStructuredResponse(query));
+                }
+              } else {
+                appendMessage('bot', processNaturalInput(userText));
+                bindChips();
+              }
+            }, 550);
+          });
+        });
+      };
+
+      bindChips();
+
+      // Form submission
       chatForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const text = chatInput.value.trim();
         if (!text) return;
         appendMessage('user', text);
         chatInput.value = '';
-        processResponse(text);
+        const typing = showTypingIndicator();
+        setTimeout(() => {
+          typing.remove();
+          appendMessage('bot', processNaturalInput(text));
+          bindChips();
+        }, 600);
       });
     });
   </script>
